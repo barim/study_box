@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+html(lang="ko-KR")
+	head
+		meta(http-equiv="X-UA-Compatible", content="IE=Edge")
+		meta(charset="UTF-8")
+		title test
+	body
+		h1 웹표준 대회
+		div
+			h2 행사 정보
+			img(src='http://placehold.it/300x80', alt='참가하세요! 웹표준경진대회')
+			dl
+				// 좀더 의미있는 태그로 컨텐츠를 마크업하시요
+				dt 대회기간 : 
+				dd 20__년도 5월 18일
+				dt 공식홈페이지 : 
+				// 새창에 띄우기.
+				dd: a(href="http://ws_award.com" target="_blank" ) http://ws_award.com
+				dt 공식이메일 : 
+				// a 태그 메일 연결. mailto: email
+				dd: a(href="mailto:eulsoo.jung@gmail.com") eulsoo.jung@gmail.com
+		
+		hr
+		
+		// div 태그를 이용해 행사 정보와 시상을 그룹핑 하시요
+		div
+			h2 시상
+			h3 시상등수
+			ol
+				// "등수 > 이름 > 성별" 순으로 강조하시요
+				li <strong>1등</strong> - <em>정아람</em>(여자)
+				li <strong>2등</strong> - <em>김한석</em>(남자)
+				li <strong>3등</strong> - <em>김민수</em>(남자)
+				li <strong>4등</strong> - <em>노한수</em>(남자)
+				li <strong>5등</strong> - <em>정금화</em>(여자)
+			h3 1등 우승소감
+			p 저는 팀버너스리가 말한 <q>웹의 가장 큰 힘은 그 보편성에 있다!</q>를 생각하며 대회에 임했습니다.
+			// 좀더 의미있는 태그로 컨텐츠를 마크업하시요

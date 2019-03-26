@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+html(lang="ko-KR")
+	head
+		meta(http-equiv="X-UA-Compatible", content="IE=Edge")
+		meta(charset="UTF-8")
+		title 이력서
+	body
+		h1 이력서
+		div
+			h2(style="color:red") 기본정보
+			div: img(src="http://placehold.it/100x120", alt="홍길동")
+			dl
+				dt 이름: 
+				dd 홍길동
+				dt 연락처: 
+				dd: address 서울 여의도 홍길동 홍길동 아파트 
+					a(href="mailto:hong@gamil.com") hong@gamil.com
+				//- 좀 더 의미 있도록 마크업하시요 
+			//- 클릭하면 메일프로그램으로 바로 연결시켜주시요 
+			//- 배경색을 다르게 줄 수 있도록 기본정보와 경력사항을 구분하시요 
+
+		div
+			h2 경력사항
+			h3 회사경력
+			ul 
+				li 현)가민 에이전시
+				li 전)플래인디자인
+				li 전)매그넘78
+				li 전)솔트솔루션
+			
+
+			h3 최근 좋아하는 일들
+			ol 
+				//- 추가되고 없어진 일들을 구분할 수 있도록 마크업 하시요 
+				//- 추가
+				li: ins 소설책 읽기 
+				//- 추가
+				li: ins 농구시합하기 
+				li 가족들과 시간 보내기
+				//- 삭제
+				li: del 사진찍기 
+			
+
+			h3 좋아하는 책
+			//- 좀 더 의미 있도록 마크업하시요 
+			p 딘셔먼의 
+				cite BULLETPROOF WEB DESIGN

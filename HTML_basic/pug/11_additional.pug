@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+html(lang="ko-KR")
+	head
+		meta(http-equiv="X-UA-Compatible", content="IE=Edge")
+		meta(charset="UTF-8")
+		title 부가정보 태그들
+	body
+		h1 월드 와이드 웹
+
+		// abbreviation 축약어 inline
+		p
+			abbr(title=" World Wide Web") WWW
+			|는 월드 와이드 웹의 머리글자이다.
+
+		p 1989년 3월 유럽 입자 물리 연구소(CERN)의 소프트웨어 공학자인 팀 버너스 리의 제안으로 시작되어 연구, 개발되었다.
+
+		// definition 정의
+		p 인터넷상의 정보를 <dfn>하이퍼텍스트(hypertext)</dfn>방식과 멀티미디어 환경에서 검색할 수 있게 해주는 정보검색 시스템이다.
+
+		// citation 인용구
+		p 그 후 웹표준 전도사 제프리젤드먼과 같은 디자이너들의 주도록 널리 알려지게 되었다. 제프리젤드먼의 <cite>DESIGNING WITH WEB STANDARDS</cite>는 전세계적으로 인기를 끌었다.
+
+		// strikethrough 줄을 그어서 지우다.
+		dl
+			dt DESIGNING WITH WEB STANDARDS
+			dd: a(href="http://amazone.com", target="_blank") amazone.com
+			// strikethrough
+			dd: s 20,000원
+			dd 15,000원
+
+		// del & insert 
+		p 또한 그의 디자인은 
+			del happydesign.png
+			|  
+			ins happycog.jpg
+			|에서 볼 수 있다.
