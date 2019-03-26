@@ -1,0 +1,11 @@
+@import url(board.css);
+
+@import url(table.css);
+
+p {
+  background: #000;
+  font-style: italic;
+  height: 30px;
+}
+
+/*# sourceMappingURL=maps/basic_import.css.map */

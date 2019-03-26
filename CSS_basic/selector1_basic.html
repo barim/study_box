@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta charset="UTF-8"/>
+    <title>selector basic</title>
+    <style>
+      p {font-size: 18px;}/* 요소 선택*/
+      #article {color:pink;}/* id 선택*/
+      .normal {color: hotpink;}/* class 선택*/
+      
+      .category li a {color:red;}/* 자손 선택  */
+      #article .normal.art {color: lime;}/* 다중 선택 클래스+클래스 */
+      .category li a.normal {color: yellow;}/* 다중 선택 요소 + 클래스 */
+      
+      .category > li > a {color:blue;}/* 자식 선택 */
+      #article + ul {font-style: italic;} /* 인접 선택 */
+      h1 ~ div {background: #ededed;}/* h1을 앞에 두고 모든 div를 선택 */
+    </style>
+  </head>
+  <body>
+    <h1>점점이동 효과</h1>
+    <div id="article">
+      <p><strong>우리는 왜 아름다움에 빠져드는가?</strong></p>
+      <p class="normal">미술관 벽에 걸려있는 예술작품을 보는데 유독 사람들의 발길을 잡는 그림이 있는가 하면, 사람들의 시선이 순간 무심코 지나쳐 버리는 그림들 또한 있다는 생각을 해보지 않았는가? 단순히 유명화가의 작품이라서,<em>그림에 대한 뒷이야기가 풍부해서</em> 혹은 작품에 대한 역사적인 평가 때문일 수도 있지만 그 모든 것을 고려하더라도 특히 눈길을 끄는 그림이 있기 마련이다.</p>
+      <p class="normal art">예술작품은 물론 실제 사람의 얼굴이나 몸매를 볼 때도 역시 마찬가지로 얼굴 예쁘고 날씬한 여성은 뭇 남성들의 시선을 사로잡기에 충분하다. 하지만 여성은 대체로 근육질 보다는 <em>사회적 영향력을 갖춘 남성</em>을 더 매력적으로 인식한다.</p>
+      <p class="normal">그러나 얼굴이나 몸매 등 외모는 썩 뛰어나지 않더라도 왠지 친근감 가는 얼굴이라면 역시 한 번 더 힐끔 쳐다보게 된다. 이러한 이유로 TV광고에서는 종종 귀여운 아기를 모델로 쓴다. <em>아기모델은 통상적인 성인모델에</em> 대한 시청자들의 기대치를 깨기 쉽고, 더 나아가 귀엽기까지 해 자꾸 쳐다보게 되는 인간 본성을 활용하기 때문이다.</p>
+    </div>
+    <ul class="category">
+      <li><a href="">오늘의 집</a></li>
+      <li><a href="">오늘의 심리학</a>
+        <ul>
+          <li><a href=""><strong>부모의 심리학</strong></a></li>
+          <li><a href="" class="normal">경제의 심리학
+              <ul>
+                <li><a href="">월급의 심리</a></li>
+                <li><a href=""><strong>소비의 심리</strong></a></li>
+                <li><a href="">휴가의 심리</a></li>
+              </ul></a></li>
+          <li><a href="">그림의 심리학</a></li>
+          <li><a href="">연애의 심리학</a></li>
+        </ul>
+      </li>
+      <li><a href=""><strong>오늘의 경제</strong></a></li>
+      <li><a href="">오늘의 학교</a></li>
+      <li><a href="">오늘의 선생</a></li>
+    </ul>
+    <div class="menu"><a href="">공감각 마케팅</a><a href="">무의식 소비</a><a href="">디지털 치매증후군</a></div>
+  </body>
+</html>
