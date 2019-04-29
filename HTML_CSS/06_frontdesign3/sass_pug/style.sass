@@ -1,0 +1,531 @@
+@charset 'utf-8'
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css)
+@import url(http://fonts.googleapis.com/css?family=Cabin+Sketch)
+@import url(http://fonts.googleapis.com/css?family=Abel)
+
+$body_width: 970px
+$c_sky: #45bbed
+$c_red: #F1001C
+
+
+@import "reset"
+
+.hide
+	overflow: hidden
+	position: absolute
+	clip    : rect(0,0,0,0)
+	width   : 1px
+	height  : 1px
+	margin  : -1px
+	padding : 0
+	border  : 0
+
+
+// 420 이하 쿼리 없음 > 모바일 퍼스트
+body
+	background-image: url("../images/bg_tile.gif")
+
+.wrap
+	width: 90%
+	margin: 30px 0 0
+	padding: 0 5%
+	border-radius: 20px
+	background: linear-gradient( rgba(211, 208, 186, 0.3), rgba(255, 255, 255, 0.5) 30%)
+
+header
+	position: relative
+	h1
+		font-weight: normal
+		font-size: 50px
+		font-family: 'Cabin Sketch', cursive
+		text-align: center
+	.language
+		width: 100%
+		position: absolute
+		top: -20px
+		left: 0
+		text-align: center
+		li
+			display: inline-block
+			margin-right: 10px
+			a
+				color: #58636D
+		li.active a
+			border-bottom: 1px solid $c_sky
+			color: $c_sky
+			padding-bottom: 5px
+	nav
+		li
+			font-family: 'Abel'
+			font-size: 18px
+			font-weight: bold
+			color: #191919
+			border-bottom: 1px solid #999
+			> a
+				display: block
+				text-align: center
+				padding: 5px 15px
+
+.breadcrumb, .control, .description, .sub, footer > nav
+	display: none
+#contents
+	h1
+		font-family: 'Abel'
+		font-size: 36px
+		color: #000
+		text-shadow: 3px 3px 0 #D5D5D5
+		margin: 30px 20px 30px 0
+	.visual
+		position: relative
+		height: 200px
+		background: none
+		padding: 0
+		border: none
+		.pannel
+			position: relative
+			height: 200px
+			li
+				position: absolute
+				top: 0
+				left: 0
+				border-radius: 5px
+				width: 100%
+				height: 200px
+				overflow: hidden
+				img
+					height: 200px
+		.arrow
+			a
+				position: absolute
+				top: calc(50% - 40px)
+				width: 50px
+				height: 81px
+				border-radius: 0 44px 44px 0
+				background-image: url("../images/visual_arrow.png")
+				background-color: rgba(0, 0, 0, 0.2)
+				text-indent: -9999px
+			a:hover
+				background-color: rgba(0, 0, 0, 0.5)
+			.prev
+				left: 0
+			.next
+				right: 0
+				background-position: -96px 0
+				border-radius: 44px 0 0 44px
+	.visual + section
+		border: none
+		margin-top: 0
+
+	> section
+		h1
+			font-family: 'Abel'
+			font-size: 24px
+			color: #000
+			text-align: left
+		h2
+			font-size: 14px
+			font-weight: 400
+			color: $c_sky
+			padding: 4px 0 3px 2px
+			margin: 0 0 13px
+section
+	overflow: hidden
+	padding: 25px 0 0
+	> section
+		border-top: 1px dotted #333
+	> .col1
+		width: 100%
+	.col1:nth-child(even)
+		margin-left: 5%
+	.col1
+		float: left
+		width: 47%
+		margin-bottom: 25px
+		img
+			width: 100%
+			border-radius: 5px
+			box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3)
+	.col2
+		width: 100%
+		float: left
+	.col3
+		width: 100%
+		float: left
+	.col4
+		width: 100%
+		float: left
+	.col5
+		width: 100%
+		float: left
+
+section:first-child
+	background: none
+
+
+#contents .global
+	.col2
+		margin-bottom: 20px
+	.col3 img
+		width: calc(100% - 10px)
+		border-radius: 50%
+		border: 5px solid rgba(255, 255, 255, 0.5)
+		background-image: url("../images/bg_line.gif")
+		box-shadow: none
+	.col5
+		margin-top: 20px
+		padding-top: 30px
+		line-height: 18px
+		.col1
+			font-size: 14px
+			width: 100%
+			h2
+				padding: 0
+				font-weight: bold
+				margin-bottom: 5px
+			strong a
+				display: block
+				font-size: 18px
+				font-weight: bold
+				color: #000
+				margin-bottom: 5px
+			img
+				display: none
+		.col1:nth-child(even)
+			margin: 0
+
+footer .license
+	text-align: center
+	padding: 20px 0 30px
+
+
+// 421 ~ 768 테블릿
+@media screen and (min-width: 421px) and (max-width: 768px)
+	header
+		nav
+			background-color: rgba(0, 0, 0, 0.1)
+			margin-top: 10px
+			ul
+				text-align: center
+				li
+					display: inline-block
+					padding: 5px 1.9%
+					border: none
+					a
+						padding: 0
+		.language
+			text-align: right
+			// position: absolute
+			// top: -20px
+			// right: 10px
+	#contents .visual .pannel li img
+				max-width: 100%
+				height: auto
+
+	#contents 
+		section
+			.col1
+				width: 31%
+				margin-left: 3.5%
+			// .col1:nth-child(even)
+				// margin-left: 3.5%
+			.col3
+				.col1:nth-child(1),
+				.col1:nth-child(4),
+				.col1:nth-child(7)
+					margin: 0 0 25px
+			.col4
+				.col1:nth-child(1),
+				.col1:nth-child(4),
+				.col1:nth-child(7)
+					margin: 0 0 25px
+			h2
+				margin: 0 0 5px
+		section > .col1
+			width: 100%
+			margin: 0 0 10px
+		.global .col5
+			.col1
+				width: 31%
+				margin-left: 3.5%
+			.col1:nth-child(2n)
+				margin-left: 3.5%
+			// .col1:hth-of-type(2),
+			// .col1:hth-of-type(4)
+			// 	margin-left: 3.5%
+			.col1:nth-child(1),
+			.col1:nth-child(4)
+				margin: 0 0 25px
+
+// 768이상 데탑
+@media screen and (min-width: 769px)
+	.wrap
+		width: 80%
+		padding: 0 35px 40px
+		margin: 50px auto
+		border-radius: 20px
+		background: linear-gradient(rgba(211, 208, 186, 0.3), rgba(255, 255, 255, 0.5) 30%)
+		border: 1px solid rgba(193, 192, 190, 0.4)
+	header:after
+		content: ''
+		display: block
+		clear: both
+	header
+		box-shadow: 0 10px 5px -6px rgba(0, 0, 0, 0.13)
+		margin-bottom: 10px
+		h1
+			position: absolute
+			top: 16px
+			left: -1px
+		.language
+			text-align: right
+			top: -24px
+			// right: 10px
+			li.active a
+				padding-bottom: 8px
+		nav
+			ul
+				float: right
+				margin: 43px 7px 24px 0
+			li
+				float: left
+				margin: 0 0 0 10px
+				border: none
+				> a
+					padding: 5px 15px
+				> a:hover
+					background: rgba(0, 0, 0, 0.3) url("../images/bg-dark.jpg") 0 0 no-repeat
+					border-radius: 16px
+					color: #fff
+			li:first-child
+				margin: 0
+
+	//메뉴 활성화시
+	header 
+		nav > ul > li > a
+			background: url("../images/nav_arrow_black.png") right center no-repeat
+			padding: 0 13px 0
+		.subnav:after
+			content: ''
+			display: block
+			clear: both
+
+		.subnav
+			position: absolute
+			top: 78px
+			left: 0
+			z-index: 100
+			width: 932px
+			padding: 45px 19px 16px
+			background: #fff url("../images/bg_shadow_bottom.png") 0 bottom no-repeat
+			.main_link
+				float: left
+				width: 681px
+				li
+					float: left
+					width: 151px
+					font-size: 13px
+					margin: 0 20px 20px 0
+					a 
+						padding: 0
+						strong
+							display: block
+							padding: 5px 0 0
+						img
+							width: 90%
+							margin-top: 10px
+				li.last
+					margin: 0
+			.extra_link
+				float: right
+				width: 201px
+				li
+					margin: 0 0 7px
+					a
+						color: $c_red
+					a:hover
+						border-bottom: 1px solid $c_red
+						background: none
+	
+	.breadcrumb
+		display: block
+		font-size: 12px
+		padding: 10px
+		a
+			margin: 0
+			padding: 0 10px 0 0
+			color: $c_sky
+			background: url("../images/breadcrumb_inactive.png") right -1px no-repeat
+		span
+			margin-left: 5px
+
+	#contents
+		// background: none
+		padding: 0
+		> h1
+			margin: 30px 20px 20px 0 
+			text-align: right
+
+		.visual
+			height: 465px
+			.control
+				display: block
+				position: absolute
+				left: 0
+				bottom: 0
+				width: 100%
+				height: 16px
+				background-color: #000
+				border-radius: 0 0 5px 5px
+				text-align: center
+				padding: 5px 0 4px
+				a
+					display: inline-block
+					margin: 0 3px
+					width: 10px
+					height: 10px
+					background-color: rgba(255, 255, 255, 0.3)
+					border-radius: 5px
+				a.active
+					background-color: #fff
+
+			.pannel
+				li
+					height: 440px
+					border-radius: 5px 5px 0 0
+					img
+						min-width: 100%
+						height: auto
+			.description
+				display: block
+				box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.5)
+				border-radius: 5px
+				position: absolute
+				right: 4.166667%
+				bottom: 40px
+				width: 334px
+				padding: 15px 20px 0px
+				background-color: #fff
+				// 960/40
+				h2
+					color: $c_red
+					font-size: 28px
+					margin: 0
+					padding: 0
+				p
+					margin: 14px 0 10px
+				a
+					float: right
+					background: $c_sky url("../images/bg_glass.png") 0 50% repeat-x
+					width: 145px
+					padding: 8px
+					margin: 0 -20px 0 0
+					border-radius: 5px 0 5px 0
+					text-align: center
+					color: #fff
+					font-size: 14px
+				a:hover
+					background-color: #4bc9ff
+
+		section
+			.col1
+				width: 17.525773%
+				// 970 / 760
+				img
+					max-width: 100%
+			.col2
+				width: 380px
+			.col3
+				//970 / 570
+				width: 58.762887%
+			.col4
+				//970 / 760
+				width: 78.350515%
+			.col5
+				width: 100%
+			> .col1
+				// 970/170
+				width: 17.525773%
+				// 970/20
+				margin-left: 2.061856%
+			> .col3 > .col1
+				// 570/170
+				width: 29.824561%
+				//570/20
+				margin-left: 3.508772%
+			> .col4 > .col1
+				// 760/170
+				width: 22.2368421%
+				// 760/20
+				margin-left: 2.631579%
+			h1
+				margin: 0 0 30px 0
+				text-shadow: none
+		
+		.global
+			.col2
+				//970/20
+				width: 37.113402%
+				// 970 / 20 
+				margin-left: 2.061856%
+			.col5 .col1
+				// 970 / 170
+				width: 17.525773%
+				// 970 / 20
+				margin-left: 2.061856%
+				h2
+					font-size: 14px
+					font-weight: 400
+					margin-bottom: 13px
+				strong a
+					font-size: 12px
+					margin-bottom: 10px
+				span
+					font-size: 11px
+					img
+						display: block
+			.col5 .col1:nth-child(even)
+				margin-left: 2.061856%
+	footer
+		background-image: url("../images/bg-dark.jpg")
+		height: 100px
+		position: relative
+		padding: 20px 2.061856%
+		// 970/20
+		text-shadow: 1px 1px 1px #333
+		border-radius: 4px
+		color: #ededed
+		a
+			color: #ededed
+			text-shadow: 1px 1px 1px #333
+		h2
+			margin: 0 0 10px
+		nav
+			display: block
+			ul 
+				float: left
+				> li
+					float: left
+			ul.menu
+				/* 930 / 348 */
+				width: 30.419355%
+				> li
+					/* 348 / 116 */
+					width: 33.333333%
+			ul.office
+				/* 930 / 580 */
+				width: 62.365591%
+				> li
+					width: 20%
+			ul.social
+				width: 7%
+				> li
+					width: 10%
+		nav:after
+			content: ''
+			display: block
+			clear: both
+		.license 
+			padding-top: 11px
+			a
+				text-shadow: none
+				color: #666

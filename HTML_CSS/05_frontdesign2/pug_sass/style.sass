@@ -1,0 +1,389 @@
+@charset 'utf-8'
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css)
+@import url(http://fonts.googleapis.com/css?family=Cabin+Sketch)
+@import url(http://fonts.googleapis.com/css?family=Abel)
+$body_width: 970px
+@import "reset"
+//common
+body
+	font: normal 12px 'nanumgothic', sans-serif
+	background: url("../images/bg_tile.gif")
+a[href="#contents"]
+	position: absolute
+	top: -99999px
+.wrap
+	width: $body_width
+	background: linear-gradient(rgba(211,208,186,0.3),rgba(196, 196, 196, 0.2))
+	margin: 50px auto
+	padding: 0 35px 40px
+	border: 1px solid rgba(193, 192, 190, 0.4)
+	border-radius: 20px
+header
+	position: relative
+	height: 100px
+	margin-bottom: 10px
+	box-shadow: 0 10px 5px -6px rgba(0, 0, 0, 0.13)
+	> h1 a
+		float: left
+		font-family: 'Cabin Sketch',cursive
+		font-size: 50px
+		font-weight: normal
+		color: #666
+		margin-top: 15px
+		transition-property: text-shadow
+		transition-duration: 0.3s
+		transition-timing-function: ease-out
+	> h1 a:hover
+		text-shadow: 0 0 20px yellow
+	> .language
+		position: absolute
+		top: -24px
+		right: 10px
+		li
+			float: left
+			margin-right: 10px
+			a
+				color:#58636D
+		li.active > a
+			color: #45BBED
+			border-bottom: 1px solid #45BBED
+			padding-bottom: 8px
+	> nav
+		> ul
+			float: right
+			font-family: 'Abel'
+			font-size: 18px
+			margin: 43px 7px 0 0
+			li
+				float: left
+				margin-left: 10px
+				a
+					color: #191919
+					padding: 5px 15px
+					border-radius: 16px
+					transition: all .3s ease
+				a:hover
+					color: #fff
+					background-color: rgba(0, 0, 0, 0.2)
+			li:first-child
+				margin: 0
+.hide
+	overflow: hidden
+	position: absolute
+	clip    : rect(0,0,0,0)
+	width   : 1px
+	height  : 1px
+	margin  : -1px
+	padding : 0
+	border  : 0
+
+// 메뉴 활성화시.
+header > nav
+	ul > li > a
+		background: url('../images/nav_arrow_black.png') no-repeat right center
+		// padding: 0 15px 0 0
+		padding-right: 15px
+	.subnav
+		position: absolute
+		top: 78px
+		left: 0
+		z-index: 100
+		width: 932px
+		padding: 45px 19px 16px
+		background: #fff url("../images/bg_shadow_bottom.png") 0 bottom no-repeat
+		.main_link
+			float: left
+			width: 681px
+			li
+				float: left
+				width: 150px
+				margin: 0 20px 20px 0
+				font-size: 13px
+				a
+					color: #58636D
+					padding: 0
+					strong
+						display: block
+						padding-top: 5px
+			li.last
+				margin-right: 0
+		.extra_link
+			float: right
+			width: 210px
+			li
+				margin: 0 0 7px 0
+				a
+					color: #F1001C
+				a:hover
+					border-bottom: 1px dotted #F1001C
+
+// breadcrumb
+.breadcrumb
+	padding: 10px
+	a
+		background: url("../images/breadcrumb_inactive.png") right 2px no-repeat
+		color: #45BBED
+		margin: 0
+		padding: 0 10px 0 0
+
+#contents
+	background: none
+	padding: 0
+	> h1
+		color: #000
+		font-family: 'Abel'
+		font-size: 42px
+		margin: 0 20px 20px 0
+		text-align: right
+		text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.15)
+	> section h1
+		color: #000
+		font: 24px 'Abel'
+		text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15)
+	> section h2
+		color: #45BBED
+		font-size: 14px
+		font-weight: 400
+		margin: 0 0 13px
+		padding: 4px 0 3px 2px
+	.visual
+		position: relative
+		height: 465px
+		padding: 0
+		border: none
+		.control
+			position: absolute
+			left: 0
+			bottom: 0
+			background-color: #000
+			width: 970px
+			height: 16px
+			border-radius: 0 0 5px 5px
+			text-align: center
+			padding: 5px 0 4px
+			a
+				background-color: rgba(255, 255, 255, 0.3)
+				border-radius: 5px
+				display: inline-block
+				width: 10px
+				height: 10px
+				margin: 0 3px
+
+		.pannel 
+			position: relative
+			li
+				position: absolute
+				top: 0
+				left: 0
+				img
+					border-radius: 5px 5px 0 0
+				.description
+					position: absolute
+					right: 40px
+					bottom: 40px
+					background-color: #fff
+					border-radius: 5px
+					box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.5)
+					padding: 15px 20px 0
+					width: 334px
+					h2
+						color: #F1001C
+						font-size: 28px
+						// background: none
+						margin: 0
+						padding: 0
+					p
+						margin: 14px 0 10px
+					a
+						background: #45BBED url("../images/bg_glass.png") 0 50% repeat-x
+						border-radius: 5px 0
+						color: #fff
+						float: right
+						font-size: 14px
+						margin: 0 -20px 0 0
+						padding: 8px
+						text-align: center
+						width: 145px
+						transition: all .3s ease
+					a:hover
+						background: #4BC9FF url("../images/bg_glass.png")  0 50% repeat-x
+						animation-name: btn_ani
+						animation-duration: 1s
+						animation-timing-function: ease
+						animation-iteration-count: infinite
+		
+		.arrow
+			a
+				position: absolute
+				text-indent: -9999px
+				display: block
+				height: 81px
+				width: 50px
+				background-image: url("../images/visual_arrow.png")
+				background-repeat: no-repeat
+				background-color: rgba(0, 0, 0, 0.2)
+				transition: all .3s ease
+			a.prev
+				left: 0
+				top: 180px
+				border-radius: 0 44px 44px 0
+			a.next
+				right: 0
+				top: 180px
+				border-radius: 44px 0 0 44px
+				background-position: -100px 0
+			a:hover
+				background-color: rgba(0, 0, 0, 0.5)
+			a.prev:hover
+				background-position: -6px 0
+			a.next:hover
+				background-position: -94px 0
+	.visual + section
+		border-top: 0
+		margin-top: 30px
+
+@keyframes btn_ani
+	0%
+		background-color: #45BBED
+	50%
+		background-color: #4BC9FF
+	100%
+		background-color: #45BBED
+
+
+section
+	display: inline-block
+	width: 970px
+	padding: 25px 0
+	> section
+		border-top: 1px dotted #333333
+	.col1
+		width: 170px
+		float: left
+		margin: 0 0 0 20px
+	.col2
+		width: 380px
+		float: left
+	.col3
+		width: 570px
+		float: left
+	.col4
+		width: 760px
+		float: left
+	.col5
+		width: 970px
+		float: left
+
+footer
+	background-image: url("../images/bg-dark.jpg")
+	border-radius: 4px
+	clear: both
+	color: #EDEDED
+	height: 100px
+	padding: 20px
+	position: relative
+	// text-shadow: 1px 1px 1px #333333
+	a
+		color: #EDEDED
+		text-shadow: 1px 1px 1px #333333
+	nav
+		> ul
+			float: left
+			li
+				width: 103px
+				float: left
+				h2
+					margin-bottom: 10px
+	
+	.license
+		position: absolute
+		left: 416px
+		bottom: -27px
+		color: #666
+		padding-top: 20px
+		text-align: center
+		text-shadow: none
+		a
+			color: #666
+			text-shadow: none
+
+//abuout us
+.wedo
+	.col1
+		a
+			position: relative
+			overflow: hidden
+			width: 170px
+			height: 120px
+			display: block
+			border-radius: 5px
+			box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3)
+			.sub
+				position: absolute
+				top: 120px
+				left: 0
+				width: 160px
+				height: 110px
+				padding: 5px
+				border-radius: 5px
+				background-color: rgba(0, 0, 0, 0.2)
+				color: #fff
+				transition: all .3s ease
+		a:hover .sub
+			top: 0
+
+.client
+	.col1:nth-child(4)
+		margin: 0 0 20px 20px
+	.col1
+		a
+			position: relative
+			overflow: hidden
+			width: 170px
+			height: 120px
+			display: block
+			border-radius: 5px
+			box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3)
+			.sub
+				position: absolute
+				top: 0
+				left: 0
+				width: 160px
+				height: 110px
+				padding: 5px
+				border-radius: 5px
+				background-color: rgba(0, 0, 0, 0.2)
+				color: #fff
+				transform: scale(0)
+				transition: all 0.5s ease
+		a:hover .sub
+			transform: scale(1)
+
+.global
+	.col1:nth-child(3)
+		margin: 0 0 20px 20px
+	.col1
+		img
+			background: url("../images/bg_line.gif") repeat scroll 0 0 rgba(0, 0, 0, 0)
+			border: 5px solid rgba(255, 255, 255, 0.5)
+			border-radius: 85px
+			box-shadow: none
+			width: 160px
+			transition: all .3s ease
+		a:hover img
+			transform: rotate(30deg)
+	.col2
+		width: 360px
+		padding: 0 0 0 20px
+	.col5
+		margin-top: 20px
+		padding-top: 30px
+		line-height: 18px
+		strong a
+			color: #000
+			display: block
+			font-weight: bold
+			margin: 0 0 10px
+		img
+			border: none
+			border-radius: 5px

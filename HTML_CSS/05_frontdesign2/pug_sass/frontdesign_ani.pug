@@ -1,0 +1,280 @@
+
+- var page_title = 'FrontDesign_ani'
+
+<!DOCTYPE html>
+html(lang="ko-KR")
+	head
+		meta(http-equiv="X-UA-Compatible", content="IE=Edge")
+		meta(charset="UTF-8")
+
+		block doc_title
+			title #{page_title}
+		meta(name="robots" ,content="all")
+		meta(name="keywords" ,content="디자인에이전시, 웹디자인, CI디자인")
+		meta(name="description" ,content="웹디자인을 비롯한 여러가지 디자인을 진행하는 회사")
+
+		link(rel="stylesheet", href="css/style.css")
+
+	body
+		.wrap
+			header
+				a(href="#contents") 컨텐츠 바로가기
+				h1: a(href="#") FrontDesign
+				ul.language
+					li: a(href="#") 中文
+					li: a(href="#") Deutsch
+					li.active: a(href="#") 한국어
+					li: a(href="#") English
+				nav.mainnav
+					//- h1.hide 메인 네비게이션
+					ul
+						li.clients
+							a(href="#") Clients
+							.subnav(style="display:none;")
+								ul.main_link
+									li: a(href="#")
+										img(src="images/nav_23andMe.jpg", alt="")
+										strong 23andMe
+									li: a(href="#")
+										img(src="images/nav_audi.jpg", alt="")
+										strong audi
+									li: a(href="#")
+										img(src="images/nav_cocacola.jpg", alt="")
+										strong cocacola
+									li.last: a(href="#")
+										img(src="images/nav_kohler.jpg", alt="")
+										strong kohler
+									li: a(href="#")
+										img(src="images/nav_lufthansa.jpg", alt="")
+										strong lufthansa
+									li: a(href="#")
+										img(src="images/nav_swisslife.jpg", alt="")
+										strong swisslife
+									li: a(href="#")
+										img(src="images/nav_wanja.jpg", alt="")
+										strong wanja
+									li.last: a(href="#")
+										img(src="images/nav_Zhejiang.jpg", alt="")
+										strong Zhejiang
+								ul.extra_link
+									li: a(href="#") More client stories
+									li: a(href="#") View client list
+									li: a(href="#") View industry list
+						li.expertise: a(href="#") Expertise
+						li.aboutus: a(href="#") About us
+						li.careers: a(href="#") Careers
+						li.offices: a(href="#") Offices
+
+			main
+				.breadcrumb
+					a(href="#") Home
+					span About us
+				
+				section#contents
+					h1 About us
+
+					section.visual
+						h1.hide 스터디케이스
+						.control
+							a.active(href="#", role="button" ,aria-label="DHL" ): span.hide DHL
+							a(href="#", role="button" ,aria-label="Volkswagen" ): span.hide Volkswagen
+							a(href="#", role="button" ,aria-label="23andMe" ): span.hide 23andMe
+						.pannel
+							ul
+								li
+									img(src="images/01_Audi.jpg", alt="")
+									.description
+										h2 DHL
+										p 두개의 강력한 브랜드 - 그리고 선구적인 전략 : 독일 Post <br/>World Net이 이제 독일 Post DHL이 되었습니다.
+										a(href="#"): span Read the story
+								li(style="display:none;")
+									img(src="images/02_mcafee.jpg", alt="")
+									.description
+										h2 Volkswagen
+										p 고 부가가치 제품을 신뢰할 수있는 품질과 신뢰의 커뮤니케이션. 그것은 FrontDesign, 폭스 바겐 간의 파트너십의 기초가됩니다.
+										a(href="#"): span Read the story
+								li(style="display:none;")
+									img(src="images/03_sony.jpg", alt="")
+									.description
+										h2 23andMe
+										p 23andMe는 소비자 유전학의 선구자이며, 디자인 전략과 메시징,웹 사이트 캠페인을 시작하였습니다.
+										a(href="#"): span Read the story
+						.arrow
+							a.prev(href="#", role="button") 이전
+							a.next(href="#", role="button") 다음
+
+					section.wedo
+						.col1
+							h1 What we do
+						.col4
+							.col1
+								h2 전략
+								a(href="#")
+									img(src="images/thumb_strategy.jpg", alt="strategy")
+									span.sub Access to the entire video library and downloads of related files and the videos themselves.
+							.col1
+								h2 디자인
+								a(href="#")
+									img(src="images/thumb_services.jpg", alt="services")
+									span.sub Access to the entire video library and downloads of related files and the videos themselves.
+							.col1
+								h2 커뮤니케이션
+								a(href="#")
+									img(src="images/thumb_communication.jpg", alt="communication")
+									span.sub Access to the entire video library and downloads of related files and the videos themselves.
+							.col1
+								h2 서비스
+								a(href="#")
+									img(src="images/thumb_services.jpg", alt="services")
+									span.sub Access to the entire video library and downloads of related files and the videos themselves.
+
+					section.client
+						.col1
+							h1 Clients
+						.col4
+							.col1
+								h2 교통 &amp; 여행
+								a(href="#")
+									img(src="images/logo_lufthansa.png", alt="lufthansa")
+									span.sub Access to the entire video library and downloads of related files and the videos themselves.
+							.col1
+								h2 자동차
+								a(href="#")
+									img(src="images/logo_audi.png", alt="audi")
+									span.sub Access to the entire video library and downloads of related files and the videos themselves.
+							.col1
+								h2 금융 서비스
+								a(href="#")
+									img(src="images/logo_swisslife.png", alt="swisslife")
+									span.sub Access to the entire video library and downloads of related files and the videos themselves.
+							.col1
+								h2 IT &amp; 통신
+								a(href="#")
+									img(src="images/logo_mcafee.png", alt="mcafee")
+									span.sub Access to the entire video library and downloads of related files and the videos themselves.
+							.col1
+								h2 소비자 &amp; 마케팅
+								a(href="#")
+									img(src="images/logo_triumph.png", alt="triumph")
+									span.sub Access to the entire video library and downloads of related files and the videos themselves.
+							.col1
+								h2 교통 &amp; 여행
+								a(href="#")
+									img(src="images/logo_kuoni.png", alt="kuoni")
+									span.sub Access to the entire video library and downloads of related files and the videos themselves.
+							.col1
+								h2 IT &amp; 통신사
+								a(href="#")
+									img(src="images/logo_adobe.png", alt="adobe")
+									span.sub Access to the entire video library and downloads of related files and the videos themselves.
+							.col1
+								h2 문화 &amp; 교육
+								a(href="#")
+									img(src="images/logo_inkling.png", alt="inkling")
+									span.sub Access to the entire video library and downloads of related files and the videos themselves.
+
+					section.global
+						.col2
+							h1 FrontDesign around the globe
+						.col3
+							.col1
+								a(href="#"): img(src="images/map_beijing.jpg", alt="beijing")
+							.col1
+								a(href="#"): img(src="images/map_berlin.jpg", alt="berlin")
+							.col1
+								a(href="#"): img(src="images/map_dusseldorf.jpg", alt="dusseldorf")
+							.col1
+								a(href="#"): img(src="images/map_geneve.jpg", alt="geneve")
+							.col1
+								a(href="#"): img(src="images/map_sanfrancisco.jpg", alt="sanfrancisco")
+							.col1
+								a(href="#"): img(src="images/map_zurich.png", alt="zurich")
+						.col5
+							.col1
+								h2 beijing
+								strong: a(href="#") FrontDesign은 중국의 5개 디자인 에이젼시 중의 하나입니다.
+								span FrontDesign은 중국 징리르네라고 하는 가장 신뢰할 수있는 경영 저널 중 하나가 실시한 중국 전체의 설문 조사에서 5번째입니다.
+							.col1
+								h2 Berlin
+								strong: a(href="#") FrontDesign는 머크브랜드에 대한 포괄적인 이미지 캠페인을 개발하였습니다.
+								span 다양한 전문 저널에 adver-tising를 실을뿐만 아니라, 새로운 캠페인은 브로셔, 온라인 배너, 페이스북을 사용합니다.
+							.col1
+								h2 Düsseldorf
+								strong: a(href="#") STAWAG를 위한 새로운 브랜드전략을 만들고, Aachen이라는 공공 전략회사를 만들고 있습니다.
+								span 이모티콘형식의 새로운 지능형 시스템은 추상적이지 않아 명확하고 이해하기 쉬운 방법으로 복잡한 주제를 새로운 모습으로 보여줍니다.
+							.col1
+								h2 San Francisco
+								strong: a(href="#") FrontDesign은 Intrax의 새로운 아이덴티티를 만들어 냈습니다.
+								span: img(src="images/news_itx.jpg", alt="intrax")
+							.col1
+								h2 Zürich
+								strong: a(href="#") FrontDesign의 KPMG 어워드를 위한 작업을 마쳤습니다.
+								span KPMG 스위스 100 주년 작업이 최근 유럽 어워드상을 수상하고있습니다. 이 것의컨셉은 FrontDesign에 의해 개발되었습니다.
+
+			footer
+				nav
+					h1.hide site map
+					ul.menu
+						li
+							h2: a(href="#") Clinents
+							ul
+								li: a(href="#") Client list
+						li
+							h2: a(href="#") Expertise
+							ul
+								li: a(href="#") Strategy
+								li: a(href="#") Design
+								li: a(href="#") Communication
+								li: a(href="#") Services
+						li
+							h2: a(href="#") About us
+							ul
+								li: a(href="#") Being at
+								li: a(href="#") awards
+					ul.office
+						li
+							h2: a(href="#") Beijing
+							ul
+								li: a(href="#") News
+								li: a(href="#") Management
+								li: a(href="#") Careers
+								li: a(href="#") Contact
+						li
+							h2: a(href="#") Berlin
+							ul
+								li: a(href="#") News
+								li: a(href="#") Management
+								li: a(href="#") Careers
+								li: a(href="#") Contact
+						li
+							h2: a(href="#") Düsseldorf
+							ul
+								li: a(href="#") News
+								li: a(href="#") Management
+								li: a(href="#") Careers
+								li: a(href="#") Contact
+						li
+							h2: a(href="#") Sanfrancisco
+							ul
+								li: a(href="#") News
+								li: a(href="#") Management
+								li: a(href="#") Careers
+								li: a(href="#") Contact
+								li: a(href="#") Blog
+						li
+							h2: a(href="#") Zürich
+							ul
+								li: a(href="#") News
+								li: a(href="#") Management
+								li: a(href="#") Careers
+								li: a(href="#") Contact
+					ul.social
+						li
+							h2: a(href="#") FrontDesign
+							ul
+								li: a(href="#"): img(src="#", alt="facebook")
+								li: a(href="#"): img(src="#", alt="twitter")
+								li: a(href="#"): img(src="#", alt="youtube")
+								li: a(href="#"): img(src="#", alt="flicker")
+				p.license: a.term(href="#") Term of use <span> &copy; FrontDesign</span>
+
