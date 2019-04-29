@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+html(lang="ko-KR")
+	head
+		meta(http-equiv="X-UA-Compatible", content="IE=Edge")
+		meta(charset="UTF-8")
+
+		block cast_title
+			title navercast
+
+		link(rel="stylesheet", type="text/css", href="css/reset.css")
+		link(rel="stylesheet", href="css/style.css")
+	body
+		.navercast
+			.cast_tab
+
+			.cast_body
+				block cast_body
+
+
+			.cast_stting
+				a(href="#" role="button" class="choice" ) 선호주제설정
+				.page
+					span 1/8
+					a(href="#" role="button" class="prev" aria-label="이전")
+					a(href="#" role="button" class="next" aria-label="다음")
+
+

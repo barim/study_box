@@ -1,0 +1,75 @@
+extends _cast_template
+
+block cast_title
+	title navercast car
+
+block cast_body
+	.toon_link
+		h3: a(href="#"): img(src="images/h3_toonlink.gif", alt="목요 웹툰 바로 가기")
+		ul
+			li: a(href="#")
+					img(src="images/toon_120x80_toon.jpg", alt="")
+					strong 오늘의 추천 웹툰은?<br/>목요웹툰 바로가기
+					span 치즈인더트랩, 기사도,<br/>
+						|가우스전자, 마술사 등
+			li: a(href="#")
+					img(src="images/toon_120x80_toon.jpg", alt="")
+					strong NEW 목요웹툰<br/>에피소드칵테일 5화
+					span 칵테일처럼 다양한 남녀가<br/>
+						|모여 만드는 청춘 스토리!
+			li: a(href="#")
+					img(src="images/toon_120x80_toon.jpg", alt="")
+					strong 이달의 신규 웹소설<br/> &lt;두 번째 날&gt;
+					span 대한민국에서 조선족으로<br/>
+						|사는 것. 그 그늘 속 이야기
+			li: a(href="#")
+					img(src="images/toon_120x80_toon.jpg", alt="")
+					strong 모험이 시작된다<br/>&lt;너와 나 사이&gt;
+					span 소꿉친구의 꿈을 대신<br/>
+						|이루어주려는 소년의 여정
+	
+	.toon_news
+		h3: a(href="#"): img(src="images/h3_toonnews.gif", alt="만화 소설 소식")
+		ul
+			li: a(href="#")
+					img(src="images/temp_toon.jpg", alt="정철 작가")
+					strong [웹툰] 작가 인터뷰 46탄
+					span 붓과 펜으로 인간의 가치와<br/>
+						|인간의 믿음에 대해 말하다<br/>
+						|&lt;본초비담&gt; 정철 작가 인터뷰
+			li: a(href="#")
+					img(src="images/temp_toon.jpg", alt="악녀의 사정 일러스트")
+					strong [웹소설] 이달의 승격작!
+					span 그래. 모든 것은 사랑때문이었어.<br/>
+						|내가 악녀가 되어버린 건 바로<br/>
+						|당신 때문! &lt;악녀의 사정&gt;<br/>
+
+	.toon_recomm
+		h3 
+			a(href="#"): img(src="images/h3_toonrecomm1_on.gif", alt="추천 단행본 만화")
+			a(href="#"): img(src="images/h3_toonrecomm2_off.gif", alt="추천 장르 소설")
+		ul
+			li: a(href="#")
+				img(src="images/temp_toon2.jpg", alt="")
+				strong 그 남자의 취향
+				span 이영란
+			li: a(href="#")
+				img(src="images/temp_toon2.jpg", alt="")
+				strong [그레이] 러브
+				span Yamagata Satomi
+			li: a(href="#")
+				img(src="images/temp_toon2.jpg", alt="")
+				strong 주홍나비
+				span 김영오
+		a(href="#" class="more") 더보기
+
+
+
+	.sbj_more
+		h3: img(src="images/h3_more.gif", alt="주제별 더보기")
+		ul
+			li: a(href="#") 네이버캐스트홈
+			li: a(href="#") 오늘의 과학
+			li: a(href="#") 인물과 역사
+			li: a(href="#") 오늘의 문학
+			li: a(href="#") 지식백과

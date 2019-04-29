@@ -1,0 +1,513 @@
+body {
+  padding: 80px;
+}
+
+.navercast {
+  border: 1px solid #000;
+  letter-spacing: -1px;
+  width: 593px;
+  overflow: hidden;
+}
+
+.navercast .cast_tab {
+  background-color: gray;
+  height: 45px;
+}
+
+.navercast .cast_body {
+  padding: 15px 30px 11px 29px;
+}
+
+.navercast .cast_body .game_hot,.navercast .cast_body .car_hot {
+  float: left;
+  width: 255px;
+  margin-bottom: 19px;
+}
+
+.navercast .cast_body .game_etc {
+  float: right;
+  width: 255px;
+}
+
+.navercast .cast_body .game_etc li {
+  overflow: hidden;
+}
+
+.navercast .cast_body .game_etc li a > * {
+  display: block;
+}
+
+.navercast .cast_body .game_etc li a img {
+  float: left;
+  margin-right: 13px;
+}
+
+.navercast .cast_body .game_etc li a strong {
+  margin: 17px 0 7px;
+  color: black;
+}
+
+.navercast .cast_body .game_etc li a span {
+  font-size: 11px;
+}
+
+.navercast .cast_body .game_etc li + li {
+  margin-top: 19px;
+}
+
+.navercast .cast_body .game_recome {
+  clear: both;
+}
+
+.navercast .cast_body .game_recome h3 {
+  margin-bottom: 9px;
+}
+
+.navercast .cast_body .game_recome h3 a {
+  padding-right: 10px;
+  display: inline-block;
+  background: url("../images/arrow.gif") no-repeat right center;
+}
+
+.navercast .cast_body .game_recome ul {
+  overflow: hidden;
+  margin-bottom: 35px;
+}
+
+.navercast .cast_body .game_recome ul li {
+  float: left;
+  width: 120px;
+}
+
+.navercast .cast_body .game_recome ul li a > * {
+  display: block;
+}
+
+.navercast .cast_body .game_recome ul li a > strong {
+  color: black;
+  margin: 12px 0 7px;
+}
+
+.navercast .cast_body .game_recome ul li a > span {
+  font-size: 11px;
+}
+
+.navercast .cast_body .game_recome ul li + li {
+  margin-left: 18px;
+}
+
+.navercast .cast_body .car_etc {
+  float: right;
+  width: 255px;
+}
+
+.navercast .cast_body .car_etc li {
+  overflow: hidden;
+}
+
+.navercast .cast_body .car_etc li a > * {
+  display: block;
+}
+
+.navercast .cast_body .car_etc li a img {
+  float: left;
+  margin-right: 13px;
+}
+
+.navercast .cast_body .car_etc li a strong {
+  margin: 2px 0 3px;
+  color: black;
+}
+
+.navercast .cast_body .car_etc li a span {
+  font-size: 11px;
+}
+
+.navercast .cast_body .car_etc li + li {
+  margin-top: 12px;
+}
+
+.navercast .cast_body .car_tecnews {
+  clear: both;
+}
+
+.navercast .cast_body .car_tecnews h3 {
+  margin-bottom: 9px;
+}
+
+.navercast .cast_body .car_tecnews ul {
+  overflow: hidden;
+  margin-bottom: 35px;
+}
+
+.navercast .cast_body .car_tecnews ul > li {
+  width: 120px;
+  float: left;
+}
+
+.navercast .cast_body .car_tecnews ul > li + li {
+  margin-left: 18px;
+}
+
+.navercast .cast_body .car_tecnews ul > li > a * {
+  display: block;
+}
+
+.navercast .cast_body .car_tecnews ul > li > a img {
+  width: 118px;
+  height: 78px;
+  border: 1px solid #999;
+}
+
+.navercast .cast_body .car_tecnews ul > li > a strong {
+  color: #000;
+  margin: 12px 0 7px;
+}
+
+.navercast .cast_body .car_tecnews ul > li > a span {
+  font-size: 11px;
+}
+
+.navercast .cast_body .cast_theme {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.navercast .cast_body .cast_theme > li {
+  float: left;
+  width: 120px;
+}
+
+.navercast .cast_body .cast_theme > li h3 {
+  margin-bottom: 9px;
+}
+
+.navercast .cast_body .cast_theme > li h3 a {
+  display: inline-block;
+  padding-right: 10px;
+  background: url("../images/arrow.gif") no-repeat right 3px;
+}
+
+.navercast .cast_body .cast_theme > li a > * {
+  display: block;
+}
+
+.navercast .cast_body .cast_theme > li a > strong {
+  color: #000;
+  margin: 13px 0 5px;
+}
+
+.navercast .cast_body .cast_theme > li a > em {
+  font-size: 11px;
+  font-style: normal;
+  color: #D3D3D3;
+  margin-bottom: 3px;
+}
+
+.navercast .cast_body .cast_theme > li a > span {
+  font-size: 11px;
+  color: #A4A3A3;
+}
+
+.navercast .cast_body .cast_theme > li + li {
+  margin-left: 18px;
+}
+
+.navercast .cast_body .cast_etc {
+  float: left;
+  width: 255px;
+  margin-bottom: 18px;
+}
+
+.navercast .cast_body .cast_etc > li {
+  overflow: hidden;
+}
+
+.navercast .cast_body .cast_etc > li > a > * {
+  display: block;
+}
+
+.navercast .cast_body .cast_etc > li > a > img {
+  float: left;
+  margin-right: 13px;
+}
+
+.navercast .cast_body .cast_etc > li > a > strong {
+  color: #000;
+  margin: 9px 0 8px;
+}
+
+.navercast .cast_body .cast_etc > li > a > span {
+  font-size: 11px;
+  color: #B7B7B7;
+}
+
+.navercast .cast_body .cast_etc > li + li {
+  margin-top: 6px;
+}
+
+.navercast .cast_body .cast_note > li > a > em {
+  color: #2E40C1;
+  font-style: normal;
+}
+
+.navercast .cast_body .cast_note > li + li {
+  margin-top: 6px;
+}
+
+.navercast .cast_body .cast_note > .special {
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.navercast .cast_body .cast_note > .special > a > * {
+  display: block;
+}
+
+.navercast .cast_body .cast_note > .special > a > img {
+  float: left;
+  width: 90px;
+  height: 60px;
+  margin-right: 11px;
+}
+
+.navercast .cast_body .cast_note > .special > a > strong {
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.navercast .cast_body .cast_note > .special > a > span {
+  font-size: 11px;
+  color: #989898;
+}
+
+.navercast .cast_body .toon_link {
+  margin-bottom: 18px;
+}
+
+.navercast .cast_body .toon_link h3 {
+  margin-bottom: 9px;
+}
+
+.navercast .cast_body .toon_link h3 > a {
+  padding-right: 10px;
+  display: inline-block;
+  background: url(../images/arrow.gif) right center no-repeat;
+}
+
+.navercast .cast_body .toon_link ul {
+  overflow: hidden;
+}
+
+.navercast .cast_body .toon_link ul li {
+  float: left;
+  width: 120px;
+}
+
+.navercast .cast_body .toon_link ul li a > * {
+  display: block;
+}
+
+.navercast .cast_body .toon_link ul li a > img {
+  border: 1px solid #BFBFBF;
+  margin-bottom: 13px;
+}
+
+.navercast .cast_body .toon_link ul li a > strong {
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.navercast .cast_body .toon_link ul li a > span {
+  font-size: 11px;
+  color: #9B9A9A;
+}
+
+.navercast .cast_body .toon_link ul li + li {
+  margin-left: 18px;
+}
+
+.navercast .cast_body .toon_news {
+  float: left;
+  width: 255px;
+  margin-bottom: 20px;
+}
+
+.navercast .cast_body .toon_news h3 {
+  margin-bottom: 9px;
+}
+
+.navercast .cast_body .toon_news ul li {
+  overflow: hidden;
+}
+
+.navercast .cast_body .toon_news ul li + li {
+  margin-top: 12px;
+}
+
+.navercast .cast_body .toon_news ul li a > * {
+  display: block;
+}
+
+.navercast .cast_body .toon_news ul li a > img {
+  float: left;
+  margin-right: 12px;
+  width: 100px;
+  height: 70px;
+}
+
+.navercast .cast_body .toon_news ul li a > strong {
+  color: #000;
+  margin-top: 4px;
+  margin-bottom: 5px;
+}
+
+.navercast .cast_body .toon_news ul li a > span {
+  font-size: 11px;
+}
+
+.navercast .cast_body .toon_recomm {
+  float: right;
+  position: relative;
+  width: 255px;
+}
+
+.navercast .cast_body .toon_recomm h3 {
+  margin-bottom: 9px;
+  background: url(../images/line_h.gif) 82px 1px no-repeat;
+  overflow: hidden;
+}
+
+.navercast .cast_body .toon_recomm h3 a:first-child {
+  margin-right: 15px;
+}
+
+.navercast .cast_body .toon_recomm h3 a {
+  float: left;
+}
+
+.navercast .cast_body .toon_recomm ul {
+  overflow: hidden;
+  background: url(../images/bg_toon_stand.png) 0 0 no-repeat;
+}
+
+.navercast .cast_body .toon_recomm ul li {
+  position: relative;
+  width: 76px;
+  float: left;
+}
+
+.navercast .cast_body .toon_recomm ul li + li {
+  margin-left: 10px;
+}
+
+.navercast .cast_body .toon_recomm ul li a {
+  text-align: center;
+}
+
+.navercast .cast_body .toon_recomm ul li a > * {
+  display: block;
+}
+
+.navercast .cast_body .toon_recomm ul li a > strong {
+  font-weight: normal;
+  color: #000;
+  margin-bottom: 3px;
+}
+
+.navercast .cast_body .toon_recomm ul li a > img {
+  width: 68px;
+  height: 98px;
+  margin-bottom: 12px;
+  padding-left: 3px;
+}
+
+.navercast .cast_body .toon_recomm ul li a > span {
+  font-size: 10px;
+}
+
+.navercast .cast_body .toon_recomm ul li a:after {
+  content: '';
+  width: 76px;
+  height: 98px;
+  background-image: url("../images/frame_68x98.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.navercast .cast_body .toon_recomm .more {
+  font-size: 11px;
+  padding-right: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url(../images/arrow.gif) right 3px no-repeat;
+}
+
+.navercast .cast_body .sbj_more {
+  clear: both;
+}
+
+.navercast .cast_body .sbj_more h3 {
+  float: left;
+  margin-right: 10px;
+}
+
+.navercast .cast_body .sbj_more ul li {
+  float: left;
+}
+
+.navercast .cast_body .sbj_more ul li a {
+  color: #000;
+}
+
+.navercast .cast_body .sbj_more ul li + li:before {
+  content: '|';
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #C9C3C3;
+}
+
+.navercast .cast_stting {
+  clear: both;
+  overflow: hidden;
+  margin: 10px 27px 15px 27px;
+}
+
+.navercast .cast_stting > a {
+  float: left;
+  background: url("../images/set.gif") no-repeat;
+  padding: 4px 0 2px 21px;
+  font-size: 11px;
+  color: gray;
+}
+
+.navercast .cast_stting .page {
+  float: right;
+}
+
+.navercast .cast_stting .page > * {
+  float: left;
+}
+
+.navercast .cast_stting .page span {
+  margin-right: 10px;
+  padding-top: 2px;
+}
+
+.navercast .cast_stting .page a {
+  display: block;
+  width: 21px;
+  height: 20px;
+}
+
+.navercast .cast_stting .page .prev {
+  background: url("../images/page.gif");
+}
+
+.navercast .cast_stting .page .next {
+  background: url("../images/page.gif") -21px 0;
+}
+
+/*# sourceMappingURL=maps/style.css.map */
