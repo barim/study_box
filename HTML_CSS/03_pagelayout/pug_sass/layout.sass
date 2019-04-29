@@ -1,0 +1,49 @@
+@charset 'utf-8'
+$body_width: 940px
+
+// layout
+.wrap
+	width: 100%
+	.header
+		width: $body_width
+		height: 119px
+		margin: 0 auto
+		background-color: rgba(#3C3B3B, 0.5)
+	.extra
+		width: 100%
+		background-color: rgba(#ededed, 0.5)
+		.inner
+			width: $body_width
+			height: 135px
+			margin: 0 auto
+			background-color: rgba(#999, 0.5)
+	.main
+		width: $body_width
+		margin: 0 auto
+		position: relative
+		.breadcrumbs
+			position: absolute
+			top: 0
+			right: 0
+		.aside
+			float: left
+			width: 120px
+			height: 200px
+			padding-top: 40px
+			background-color: rgba(orange, 0.5)
+		.contents
+			float: right
+			width: 760px
+			height: 300px
+			height: 640px
+			padding: 70px 0 100px
+			background-color: #ededed
+	.footer
+		clear: both
+		width: 100%
+		border-top: 1px solid #f1f1f1
+		.inner
+			width: $body_width
+			height: 130px
+			margin: 0 auto
+			background-color: rgba(red, 0.5)

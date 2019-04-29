@@ -1,0 +1,96 @@
+.wrap {
+  width: 100%;
+}
+
+.wrap .header {
+  width: 940px;
+  height: 119px;
+  margin: 0 auto;
+  background-color: rgba(60, 59, 59, 0.5);
+}
+
+.wrap .extra {
+  width: 100%;
+  background-color: rgba(237, 237, 237, 0.5);
+}
+
+.wrap .extra .inner {
+  width: 940px;
+  height: 10px;
+  margin: 0 auto;
+  background-color: rgba(153, 153, 153, 0.5);
+}
+
+.wrap .main {
+  width: 940px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.wrap .main .breadcrumbs {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.wrap .main .aside {
+  float: left;
+  width: 120px;
+  height: 200px;
+  padding-top: 40px;
+}
+
+.wrap .main .contents {
+  float: right;
+  width: 760px;
+  height: 640px;
+  padding: 70px 0 100px;
+  background-color: #ededed;
+}
+
+.wrap .footer {
+  clear: both;
+  width: 100%;
+  border-top: 1px solid #f1f1f1;
+}
+
+.wrap .footer .inner {
+  width: 940px;
+  height: 130px;
+  margin: 0 auto;
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.aside > h2 {
+  border-bottom: 2px solid #339900;
+  padding-bottom: 7px;
+  margin-bottom: 12px;
+}
+
+.lnb > li a {
+  display: block;
+}
+
+.lnb > li > a {
+  padding: 5px 0 4px;
+}
+
+.lnb > li ul > li > a {
+  padding-top: 4px;
+}
+
+.side_links {
+  margin-top: 101px;
+}
+
+.side_links h3 {
+  font-size: 10px;
+  letter-spacing: -0.11em;
+  margin-bottom: 5px;
+}
+
+.side_links img {
+  vertical-align: top;
+}
+
+/*# sourceMappingURL=maps/2_lnb_menu.css.map */

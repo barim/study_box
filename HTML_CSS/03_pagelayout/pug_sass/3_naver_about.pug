@@ -1,0 +1,95 @@
+
+- var page_title = '회사소개'
+
+<!DOCTYPE html>
+html(lang="ko-KR")
+	head
+		meta(http-equiv="X-UA-Compatible", content="IE=Edge")
+		meta(charset="UTF-8")
+
+		block naver_title
+			title naver #{page_title}
+
+		link(rel="stylesheet", type="text/css", href="css/reset.css")
+		link(rel="stylesheet", href="css/style.css")
+	body
+		.wrap
+			.header
+
+			.extra
+				.inner
+					a.open(href="#"): img(src="images/btn_extra_open.gif", alt="펼치기")
+
+			.main
+				.breadcrumbs 
+					span.home: a(href="#") 메인
+					span.gt &gt; 
+					span: a(href="#") NAVER
+					span.gt &gt; 
+					span: a(href="#") NAVER소개
+					span.line |
+					span.print
+						a(href="#") 인쇄
+				.aside
+					//- 사이드 메뉴 시작
+					h2: img(src="images/h2_recruit.gif", alt="채용")
+					ul.lnb
+						li
+							a(href="#"): img(src="images/lnb_recruit1_off.gif", alt="일과사람")
+							ul(style="display:none;")
+								li: a(href="#"): img(src="images/lnb_recruit31_on.gif", alt="공지사항")
+								li: a(href="#"): img(src="images/lnb_recruit32_off.gif", alt="채용프로세스")
+								li: a(href="#"): img(src="images/lnb_recruit33_off.gif", alt="진행중인채용")
+								li: a(href="#"): img(src="images/lnb_recruit34_off.gif", alt="인재DB등록")
+								li: a(href="#"): img(src="images/lnb_recruit35_off.gif", alt="채용문의")
+						li
+							a(href="#"): img(src="images/lnb_recruit2_off.gif", alt="회사생활")
+							ul(style="display:none;")
+								li: a(href="#"): img(src="images/lnb_recruit31_on.gif", alt="공지사항")
+								li: a(href="#"): img(src="images/lnb_recruit32_off.gif", alt="채용프로세스")
+								li: a(href="#"): img(src="images/lnb_recruit33_off.gif", alt="진행중인채용")
+								li: a(href="#"): img(src="images/lnb_recruit34_off.gif", alt="인재DB등록")
+								li: a(href="#"): img(src="images/lnb_recruit35_off.gif", alt="채용문의")
+						li
+							a(href="#"): img(src="images/lnb_recruit3_on.gif", alt="입사지원")
+							ul
+								li: a(href="#"): img(src="images/lnb_recruit31_on.gif", alt="공지사항")
+								li: a(href="#"): img(src="images/lnb_recruit32_off.gif", alt="채용프로세스")
+								li: a(href="#"): img(src="images/lnb_recruit33_off.gif", alt="진행중인채용")
+								li: a(href="#"): img(src="images/lnb_recruit34_off.gif", alt="인재DB등록")
+								li: a(href="#"): img(src="images/lnb_recruit35_off.gif", alt="채용문의")
+					.side_links
+						h3 Related Information
+						a(href="#"): img(src="images/bnn_uxdp_2013.jpg", alt="UXDP 2013 제8회 사용자경험 디자인&마케팅 워크숍")
+						a(href="#"): img(src="images/bnn_creative_study_2013.jpg", alt="IT/SW 창의연구 과정보기 2013")
+					//- 사이드 메뉴 끝
+				.contents.naver11
+					h3: img(src="images/h3_notice.gif", alt="NHN")
+					p.slogan: img(src="images/txt_corp_slogan.gif", alt="사람과 사람, 오늘과 내일, 네트워크와 네트워크가 연결되는 더 큰 세상, NHN이 만들어갑니다.")
+					.col3.first
+						.col
+							p NHN㈜는 No. 1 검색 포털 네이버(www.naver.com), 국내 최대 인터넷 게임 포털 한게임(www.hangame.com), 국내 최초 어린이 전용 포털 쥬니어네이버(jr.naver.com), 국내 최초 온라인 기부 포털 해피빈(happybean.naver.com), 국내 최초 마이크로블로그 서비스 미투데이(http://me2day.net/)를 운영하고 있는 국내 최고의 인터넷 전문 기업입니다.
+							p HN은 검색과 게임을 양축으로 혁신적이고 편리한 서비스를 꾸준히 선보이며 디지털 라이프를 선도하고 있습니다. 각종 인터넷 서비스 지표 조사에서 확고한 선두 지위를 확보하며 국내 최고의 인터넷 기업으로 자리매김 했습니다.
+						.col
+							p 또한 NHN은 핵심 서비스인 검색과 게임분야에서 검색 광고, 게임 유료 서비스 등의 안정적인 수익 모델을 발굴하고 이를 성공적으로 시장에 정착시켜 국내 최고의 수익률을 자랑하는 인터넷 기업으로 성장 하였습니다.
+							p 이 밖에도 해외시장 진출에 있어 선구적인 역할을 하고 있는 NHN은 일본과 미국에서 탄탄한 비즈니스 기반을 확보하는 데 성공하였습니다. 이를 통해, 세계 최고의 인터넷 기업으로 도약하기 위한 글로벌 역량을 갖추게 되었습니다
+							p NHN은 핵심기술 개발에 대한 끊임없는 연구와 투자를 통해 모든 이에게 도움이 되는 서비스, 공공의 이익이 되는 서비스를 제공함으로써 고객과 함께 성장해 나가겠습니다.
+						.col.last
+							ul.link_banner
+								li: a(href="#"): img(src="images/bnn_corp_nvr.gif", alt="No.1 검색포털, 네이버")
+								li: a(href="#"): img(src="images/bnn_corp_jrn.gif", alt="국내 최초 어린이 전용 포털, 쥬니어네이버")
+								li: a(href="#"): img(src="images/bnn_corp_hbn.gif", alt="국내 최초 온라인 기부 포털, 해피빈")
+
+					h4: img(src="images/h4_corp_ci.gif", alt="CI / Corporate Identity Concept")
+					.col3
+						.col
+							p: img(src="images/txt_corp_ci.gif", alt="NHN의 CI는 ‘연결Connect’를 통해 만들어지는 모든 가치를 담고 있습니다.")
+						.col
+							p 서로 멀리 떨어져 있는 사람과 연결되고, 어제에서 오늘로, 그리고 내일로 세대가 이어지며, 네트워크를 통해 자유롭게 정보를 나눌 수 있는 세상, 네이버는 모든 것이 서로 연결되는 더 큰 세상을 만들어가고 있습니다.<br />
+							|NAVER CI의 'Green Color'와 '고딕계열의 대문자'는 친근함과 신뢰를 의미하며, 인터넷으로 연결되는 더 큰 세상에 친근하고 믿을 수 있는 안내자가 되고자 하는 서비스 철학을 담고 있습니다.
+						.col.last
+							.banner: a(href="#"): img(src="images/btn_corp_down.gif", alt="nhn ci 다운로드")
+
+					.visual
+			.footer
+				.inner
