@@ -1,0 +1,91 @@
+body {
+  padding: 40px;
+}
+
+.re_cast {
+  position: relative;
+  width: 755px;
+  height: 244px;
+  border: 1px solid #000;
+  padding: 10px;
+  letter-spacing: -1px;
+}
+
+.re_cast h3 {
+  border-bottom: 2px solid black;
+  margin-bottom: 25px;
+}
+
+.re_cast ul {
+  float: left;
+}
+
+.re_cast ul li {
+  overflow: hidden;
+}
+
+.re_cast ul li a * {
+  display: block;
+}
+
+.re_cast ul li a img {
+  float: left;
+  margin-right: 10px;
+}
+
+.re_cast ul li a strong {
+  color: #000;
+}
+
+.re_cast ul li a em {
+  font-style: normal;
+}
+
+.re_cast .left {
+  padding: 0 23px;
+  width: 394px;
+}
+
+.re_cast .left li + li {
+  margin-top: 22px;
+}
+
+.re_cast .left li > a > span {
+  margin-top: 8px;
+}
+
+.re_cast .right {
+  border-left: 1px solid #999;
+  padding: 10px 18px;
+  width: 278px;
+}
+
+.re_cast .right li + li {
+  margin-top: 18px;
+}
+
+.re_cast .page {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.re_cast .page * {
+  float: left;
+}
+
+.re_cast .page span {
+  margin-right: 5px;
+}
+
+.re_cast .page a.next img {
+  margin-left: 1px;
+}
+
+.cf::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/*# sourceMappingURL=maps/recast2.css.map */

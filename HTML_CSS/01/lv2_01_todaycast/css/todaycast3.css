@@ -1,0 +1,70 @@
+body {
+  padding: 30px;
+}
+
+.today_cast {
+  position: relative;
+  border: 1px solid black;
+  width: 755px;
+  padding: 10px;
+  letter-spacing: -1px;
+}
+
+.today_cast h3 {
+  border-bottom: 2px solid black;
+  padding: 0 0 10px 13px;
+  margin-bottom: 20px;
+}
+
+.today_cast ul {
+  margin-left: 22px;
+  overflow: hidden;
+}
+
+.today_cast ul li + li {
+  margin-left: 19px;
+}
+
+.today_cast ul li {
+  float: left;
+  width: 127px;
+}
+
+.today_cast ul li a > * {
+  display: block;
+}
+
+.today_cast ul li a > img {
+  padding: 3px;
+  border: 1px solid #999;
+  margin-bottom: 5px;
+}
+
+.today_cast ul li a > strong {
+  color: #000;
+}
+
+.today_cast ul li a > span {
+  color: #999;
+}
+
+.today_cast .page {
+  border: 1px solid #000;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.today_cast .page * {
+  float: left;
+}
+
+.today_cast .page span {
+  margin-right: 5px;
+}
+
+.today_cast .page .next {
+  margin-left: 1px;
+}
+
+/*# sourceMappingURL=maps/todaycast3.css.map */

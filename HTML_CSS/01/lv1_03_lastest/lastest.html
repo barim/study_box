@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta charset="UTF-8"/>
+    <title>lastest_news</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <style>
+      body{padding: 10px;}
+      .lastest_news{outline: 1px solid red; position: relative;}
+      .lastest_news>h3{
+      	border-bottom: 2px solid black;
+      	padding-bottom: 5px;
+      	margin-bottom: 10px;
+      }
+      .lastest_news>ul{outline: 1px solid lime;}
+      .lastest_news>ul>li{outline: 1px solid orange;}
+      .lastest_news>ul>li+li{margin-top: 5px;}
+      .lastest_news>ul>li>a{
+      	outline: 1px solid green;
+      	background-image: url('images/bul_arrow.png');
+      	background-repeat: no-repeat;
+      	background-position: 0 2px;
+      	padding-left: 12px;
+      }
+      .lastest_news>ul>li>a:hover{
+      	background-position: 0 -20px;
+      }
+      .lastest_news>.more{
+      	position: absolute;
+      	top: 0;
+      	right: 0;
+      	outline: 1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="lastest_news">
+      <h3>금주의 공지사항</h3>
+      <ul>
+        <li><a href="#">목요일은 html의 태그설명이 있습니다</a></li>
+        <li><a href="#">목요일은 html의 태그설명이 있습니다</a></li>
+        <li><a href="#">목요일은 html의 태그설명이 있습니다</a></li>
+        <li><a href="#">목요일은 html의 태그설명이 있습니다</a></li>
+        <li><a href="#">목요일은 html의 태그설명이 있습니다</a></li>
+      </ul><a href="#" class="more">more</a>
+    </div>
+  </body>
+</html>
