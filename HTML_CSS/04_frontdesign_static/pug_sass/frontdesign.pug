@@ -1,0 +1,225 @@
+
+- var page_title = 'FrontDesign'
+
+<!DOCTYPE html>
+html(lang="ko-KR")
+	head
+		meta(http-equiv="X-UA-Compatible", content="IE=Edge")
+		meta(charset="UTF-8")
+
+		block doc_title
+			title #{page_title}
+		meta(name="robots" ,content="all")
+		meta(name="keywords" ,content="디자인에이전시, 웹디자인, CI디자인")
+		meta(name="description" ,content="웹디자인을 비롯한 여러가지 디자인을 진행하는 회사")
+
+		link(rel="stylesheet", type="text/css", href="css/reset.css")
+		link(rel="stylesheet", href="css/style.css")
+
+	body
+		.wrap
+			.header
+				h1: img(src="images/logo.gif", alt="FrontDesign")
+				ul.language
+					li: a(href="#") 中文
+					li: a(href="#") Deutsch
+					li.active: a(href="#") 한국어
+					li: a(href="#") English
+				ul.nav
+					li
+						a.clients(href="#") Clients
+						ul.subnav(style="display:none;")
+							li: a(href="#")
+								img(src="images/nav_23andMe.jpg", alt="")
+								strong 23andMe
+					li: a.expertise(href="#") Expertise
+					li: a.aboutus(href="#") About us
+					li: a.careers(href="#") Careers
+					li: a.offices(href="#") Offices
+
+			.breadcrumb
+				a(href="#") Home
+				span About us
+
+			h2 About us
+
+			.visual
+				.control
+					a.active(href="#", role="button" ) DHL
+					a(href="#", role="button") Volkswagen
+					a(href="#", role="button") 23andMe
+				.pannel
+					ul
+						li
+							img(src="images/01_Audi.jpg", alt="")
+							.description
+								h3 DHL
+								p 두개의 강력한 브랜드 - 그리고 선구적인 전략 : 독일 Post <br/>World Net이 이제 독일 Post DHL이 되었습니다.
+								a(href="#"): span Read the story
+						li(style="display:none;")
+							img(src="images/02_mcafee.jpg", alt="")
+							.description
+								h3 Volkswagen
+								p 고 부가가치 제품을 신뢰할 수있는 품질과 신뢰의 커뮤니케이션. 그것은 FrontDesign, 폭스 바겐 간의 파트너십의 기초가됩니다.
+								a(href="#"): span Read the story
+						li(style="display:none;")
+							img(src="images/03_sony.jpg", alt="")
+							.description
+								h3 23andMe
+								p 23andMe는 소비자 유전학의 선구자이며, 디자인 전략과 메시징,웹 사이트 캠페인을 시작하였습니다.
+								a(href="#"): span Read the story
+				.arrow
+					a.prev(href="#", role="button") 이전
+					a.next(href="#", role="button") 다음
+
+			.contents
+				.section
+					.col1
+						h3 What we do
+					.col4
+						.col1
+							h4 전략
+							a(href="#"): img(src="images/thumb_strategy.jpg", alt="strategy")
+						.col1
+							h4 디자인
+							a(href="#"): img(src="images/thumb_services.jpg", alt="services")
+						.col1
+							h4 커뮤니케이션
+							a(href="#"): img(src="images/thumb_communication.jpg", alt="communication")
+						.col1
+							h4 서비스
+							a(href="#"): img(src="images/thumb_services.jpg", alt="services")
+
+				.section
+					.col1
+						h3 Clients
+					.col4
+						.col1
+							h4 교통 &amp; 여행
+							a(href="#"): img(src="images/logo_lufthansa.png", alt="lufthansa")
+						.col1
+							h4 자동차
+							a(href="#"): img(src="images/logo_audi.png", alt="audi")
+						.col1
+							h4 금융 서비스
+							a(href="#"): img(src="images/logo_swisslife.png", alt="swisslife")
+						.col1
+							h4 IT &amp; 통신
+							a(href="#"): img(src="images/logo_mcafee.png", alt="mcafee")
+						.col1
+							h4 소비자 &amp; 마케팅
+							a(href="#"): img(src="images/logo_triumph.png", alt="triumph")
+						.col1
+							h4 교통 &amp; 여행
+							a(href="#"): img(src="images/logo_kuoni.png", alt="kuoni")
+						.col1
+							h4 IT &amp; 통신사
+							a(href="#"): img(src="images/logo_adobe.png", alt="adobe")
+						.col1
+							h4 문화 &amp; 교육
+							a(href="#"): img(src="images/logo_inkling.png", alt="inkling")
+
+				.section.global
+					.col2
+						h3 FrontDesign around the globe
+					.col3
+						.col1
+							a(href="#"): img(src="images/map_beijing.jpg", alt="beijing")
+						.col1
+							a(href="#"): img(src="images/map_berlin.jpg", alt="berlin")
+						.col1
+							a(href="#"): img(src="images/map_dusseldorf.jpg", alt="dusseldorf")
+						.col1
+							a(href="#"): img(src="images/map_geneve.jpg", alt="geneve")
+						.col1
+							a(href="#"): img(src="images/map_sanfrancisco.jpg", alt="sanfrancisco")
+						.col1
+							a(href="#"): img(src="images/map_zurich.png", alt="zurich")
+					.col5
+						.col1
+							h4 beijing
+							strong: a(href="#") FrontDesign은 중국의 5개 디자인 에이젼시 중의 하나입니다.
+							span FrontDesign은 중국 징리르네라고 하는 가장 신뢰할 수있는 경영 저널 중 하나가 실시한 중국 전체의 설문 조사에서 5번째입니다.
+						.col1
+							h4 Berlin
+							strong: a(href="#") FrontDesign는 머크브랜드에 대한 포괄적인 이미지 캠페인을 개발하였습니다.
+							span 다양한 전문 저널에 adver-tising를 실을뿐만 아니라, 새로운 캠페인은 브로셔, 온라인 배너, 페이스북을 사용합니다.
+						.col1
+							h4 Düsseldorf
+							strong: a(href="#") STAWAG를 위한 새로운 브랜드전략을 만들고, Aachen이라는 공공 전략회사를 만들고 있습니다.
+							span 이모티콘형식의 새로운 지능형 시스템은 추상적이지 않아 명확하고 이해하기 쉬운 방법으로 복잡한 주제를 새로운 모습으로 보여줍니다.
+						.col1
+							h4 San Francisco
+							strong: a(href="#") FrontDesign은 Intrax의 새로운 아이덴티티를 만들어 냈습니다.
+							span: img(src="images/news_itx.jpg", alt="intrax")
+						.col1
+							h4 Zürich
+							strong: a(href="#") FrontDesign의 KPMG 어워드를 위한 작업을 마쳤습니다.
+							span KPMG 스위스 100 주년 작업이 최근 유럽 어워드상을 수상하고있습니다. 이 것의컨셉은 FrontDesign에 의해 개발되었습니다.
+
+			.footer
+				h2 site map
+				ul.menu
+					li
+						h5: a(href="#") Clinents
+						ul
+							li: a(href="#") Client list
+					li
+						h5: a(href="#") Expertise
+						ul
+							li: a(href="#") Strategy
+							li: a(href="#") Design
+							li: a(href="#") Communication
+							li: a(href="#") Services
+					li
+						h5: a(href="#") About us
+						ul
+							li: a(href="#") Being at
+							li: a(href="#") awards
+				ul.office
+					li
+						h5: a(href="#") Beijing
+						ul
+							li: a(href="#") News
+							li: a(href="#") Management
+							li: a(href="#") Careers
+							li: a(href="#") Contact
+					li
+						h5: a(href="#") Berlin
+						ul
+							li: a(href="#") News
+							li: a(href="#") Management
+							li: a(href="#") Careers
+							li: a(href="#") Contact
+					li
+						h5: a(href="#") Düsseldorf
+						ul
+							li: a(href="#") News
+							li: a(href="#") Management
+							li: a(href="#") Careers
+							li: a(href="#") Contact
+					li
+						h5: a(href="#") Sanfrancisco
+						ul
+							li: a(href="#") News
+							li: a(href="#") Management
+							li: a(href="#") Careers
+							li: a(href="#") Contact
+							li: a(href="#") Blog
+					li
+						h5: a(href="#") Zürich
+						ul
+							li: a(href="#") News
+							li: a(href="#") Management
+							li: a(href="#") Careers
+							li: a(href="#") Contact
+				ul.social
+					li
+						h5: a(href="#") FrontDesign
+						ul
+							li: a(href="#"): img(src="#", alt="facebook")
+							li: a(href="#"): img(src="#", alt="twitter")
+							li: a(href="#"): img(src="#", alt="youtube")
+							li: a(href="#"): img(src="#", alt="flicker")
+				p.license: a.term(href="#") Term of use <span> &copy; FrontDesign</span>
+

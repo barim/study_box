@@ -1,0 +1,201 @@
+@charset 'utf-8'
+$body_width: 970px
+
+//layout
+body
+	background-image: url("../images/bg_9x9.gif")
+.wrap
+	width: $body_width
+	margin: 0 auto
+	padding: 0 35px
+	background-color: #fff
+
+//header
+.header
+	position: relative
+	height: 100px
+	background: url("../images/bg_shadow_bottom.png") 0 bottom no-repeat
+	.language
+		position: absolute
+		top: 14px
+		right: 10px
+		li
+			float: left
+		li.active > a
+			color: red
+		li + li
+			margin-left: 10px
+	.nav
+		float: right
+		margin: -40px 10px 0 0
+		li
+			float: left
+			a
+				color: #000
+				font-size: 14px
+				font-weight: bold
+		li+li
+			margin-left: 32px
+
+//breadcrumb
+.breadcrumb
+	padding: 10px
+	> a
+		color: blue
+		padding-right: 10px
+		background: url("../images/breadcrumb_inactive.png") 95% 10% no-repeat
+
+//common
+h2
+	text-align: right
+	font-size: 28px
+	color: red
+	line-height: 28px
+	margin-bottom: 20px
+	
+
+// visual
+.visual
+	position: relative
+	height: 465px
+	// overflow: hidden
+	.control
+		position: absolute
+		left: 0
+		bottom: 0
+		width: 100%
+		background-color: red
+		text-align: center
+		padding: 5px 0 4px
+		font-size: 0
+		a
+			display: inline-block
+			color: #fff
+			width: 16px
+			height: 16px
+			background: url("../images/visual_slider_inactive.png")no-repeat
+			text-indent: -9999px
+		a.active
+			background: url("../images/visual_slider_active.png")no-repeat
+	.arrow
+		a
+			// display: block
+			position: absolute
+			top: 175px
+			width: 50px
+			height: 81px
+			font-size: 0
+			background-color: #000
+			background-image: url("../images/visual_arrow.png")
+		a.next
+			right: 0
+			background-position: -100px 0
+	.pannel
+		> ul
+			> li
+				position: relative
+				> .description
+					position: absolute
+					right: 18px
+					bottom: 15px
+					width: 334px
+					padding: 10px 13px 0
+					background-color: #fff
+					h3
+						font-size: 28px
+						color: red
+					p
+						font-size: 13px
+						margin-bottom: 15px
+					a
+						display: block
+						float: right
+						width: 145px
+						font-size: 14px
+						color: #fff
+						padding: 2px 0 5px 30px
+						background-color: #45bbed
+						background-image: url("../images/visual_readthestory.gif")
+						background-repeat: no-repeat
+						margin-right: -13px
+					a:hover, a:focus
+						background-color: #4bc9ff
+						background-position: 0 -25px
+
+// content
+.contents
+	h3
+		color: #45bbed
+		font-size: 24px
+	h4
+		color: #45bbed
+		font-size: 14px
+		font-weight: normal
+		padding-bottom: 8px
+		margin-bottom: 13px
+		background: url("../images/line_dot.png") 0 bottom repeat-x scroll
+		//scroll은 배경과 함께 흘러가는 기본설정.
+	.section + .section
+		background: url("../images/line_dot.png") 0 0 repeat-x
+
+	.section:after
+		content: ''
+		clear: both
+		display: block
+
+	.section
+		padding: 25px 0
+		.col1
+			float: left
+			width: 170px
+			margin-left: 20px
+		.col2
+			float: left
+			width: 360px
+			margin-left: 20px
+		.col3
+			float: left
+			width: 570px
+		.col4
+			float: left
+			width: 760px
+		.col5
+			float: left
+	.section.global
+		.col1 img
+			width: 170px
+		.col3 .col1
+			margin: 0 0 20px 20px
+		.col5 .col1
+			strong
+				display: block
+				margin-bottom: 10px
+				a
+					color: red
+
+//footer
+.footer
+	background-color: #ededed
+	padding: 20px 10px 20px 20px
+	overflow: hidden
+	> ul
+		float: left
+		li
+			float: left
+			width: 94px
+			margin-right: 10px
+			h5
+				margin-bottom: 10px
+	> p
+		clear: both
+		padding-top: 20px
+		text-align: center
+	> h2
+		overflow: hidden
+		position: absolute
+		clip:     rect(0,0,0,0)
+		width:    1px
+		height:   1px
+		margin:   -1px
+		padding:  0
+		border:   0
