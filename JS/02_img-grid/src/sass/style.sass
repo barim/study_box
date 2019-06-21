@@ -1,0 +1,36 @@
+@charset 'utf-8'
+
+body
+	margin: 0
+	height: 100vh
+.grid
+	height: 0
+	background: url(../images/grid-bg-pattern.png)
+	width: 960px
+	margin-left: auto
+	margin-right: auto
+
+	transition: all 1s ease-out
+.grid.show
+	height: 100vh
+.grid-toggle
+	position: fixed
+	top: 10px
+	left: 10px
+	color: #34c0ff
+	font-size: 32px
+	animation: slideDownPoint 1.2s cubic-bezier(0.39, 0.58, 0.57, 1)
+.grid-toggle:active
+	transform: scale(0.8)
+@keyframes slideDownPoint
+	0%
+		top: -400px
+		opacity: 0
+		transform: rotate(640deg)
+	50%
+		opacity: 0.5
+	100%
+		top: 10px
+		opacity: 1
+		transform: rotate(0deg)
+

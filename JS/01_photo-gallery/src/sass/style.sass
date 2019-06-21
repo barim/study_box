@@ -1,0 +1,101 @@
+@charset 'utf-8'
+
+body
+	margin: 0
+
+/**
+ * --------------------------------
+ * #background-group
+ * --------------------------------
+ */
+#background-group
+	background: #FC414B
+
+	[class^="bg-area"]
+		position: relative
+		float: left
+		width: 50%
+		height: 50%
+		text-align: center
+		transition: all 0.4s cubic-bezier(0.950, 0.050, 0.795, 0.035)
+		filter: grayscale(100%)
+
+	.filter-off
+		filter: grayscale(0%)
+
+	[class^="bg-area"]:before
+		content: ''
+		position: absolute
+		top: 50%
+		left: 50%
+		color: #fff
+		text-shadow: 0 0 3px #3a0099
+		transform: translate(-50%, -50%)
+
+	@for $i from 1 through 4
+		*:nth-child(#{$i}) /* IE9+ */
+			background: url('../images/wallpaper-0' + $i + '.jpg') center no-repeat
+			background-size: cover
+		*:nth-child(#{$i}):before
+			@if $i == 1
+				content: 'Card A'
+			@else if $i == 2
+				content: 'Card B'
+			@else if $i == 3
+				content: 'Card C'
+			@else if $i == 4
+				content: 'Card D'
+
+/**
+ * --------------------------------
+ * #background-control
+ * --------------------------------
+ */
+#background-control
+	position: absolute
+	z-index: 100
+	top: 50%
+	left: 50%
+	width: 300px
+	height: 300px
+	transform: translate(-50%,-50%) rotate(-45deg) scale(0.3)
+	transition: all 0.4s cubic-bezier(0.600, -0.280, 0.735, 0.045)
+	// background: #000
+	a
+		display: block
+		float: left
+		width: 50%
+		height: 50%
+		text-decoration: none
+		box-sizing: border-box
+		box-shadow: 0 0 6px rgba(255, 255, 255, 0.9)
+	@for $i from 1 through 4
+		a:nth-child(#{$i}) /* IE9+ */
+			background: url('../images/wallpaper-0' +$i+ '.jpg')
+			background-size: cover
+	a:nth-child(1)
+		border-radius: 100% 0 0 0
+	a:nth-child(2)
+		border-radius: 0 100% 0 0
+	a:nth-child(3)
+		border-radius: 0 0 0 100%
+	a:nth-child(4)
+		border-radius: 0 0 100% 0
+
+#background-control:hover
+	transform: rotate(0deg) scale(1) translate(-50%,-50%)
+
+
+
+
+/**
+ * --------------------------------
+ * 공통 클래스
+ * --------------------------------
+ */
+.cf:after
+	content: ''
+	display: block
+	clear: both
+.lt-ie8 .cf
+	zoom: 1

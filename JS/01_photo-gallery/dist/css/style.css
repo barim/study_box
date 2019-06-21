@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+body {
+  margin: 0;
+}/**
+ * --------------------------------
+ * #background-group
+ * --------------------------------
+ */#background-group {
+  background: #FC414B;
+}
+
+#background-group [class^="bg-area"] {
+  position: relative;
+  float: left;
+  width: 50%;
+  height: 50%;
+  text-align: center;
+  -webkit-transition: all 0.4s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  transition: all 0.4s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+#background-group .filter-off {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+#background-group [class^="bg-area"]:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  text-shadow: 0 0 3px #3a0099;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#background-group *:nth-child(1) {
+  background: url("../images/wallpaper-01.jpg") center no-repeat;
+  background-size: cover;
+}
+
+#background-group *:nth-child(1):before {
+  content: 'Card A';
+}
+
+#background-group *:nth-child(2) {
+  background: url("../images/wallpaper-02.jpg") center no-repeat;
+  background-size: cover;
+}
+
+#background-group *:nth-child(2):before {
+  content: 'Card B';
+}
+
+#background-group *:nth-child(3) {
+  background: url("../images/wallpaper-03.jpg") center no-repeat;
+  background-size: cover;
+}
+
+#background-group *:nth-child(3):before {
+  content: 'Card C';
+}
+
+#background-group *:nth-child(4) {
+  background: url("../images/wallpaper-04.jpg") center no-repeat;
+  background-size: cover;
+}
+
+#background-group *:nth-child(4):before {
+  content: 'Card D';
+}/**
+ * --------------------------------
+ * #background-control
+ * --------------------------------
+ */#background-control {
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg) scale(0.3);
+  transform: translate(-50%, -50%) rotate(-45deg) scale(0.3);
+  -webkit-transition: all 0.4s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  transition: all 0.4s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+#background-control a {
+  display: block;
+  float: left;
+  width: 50%;
+  height: 50%;
+  text-decoration: none;
+  box-sizing: border-box;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.9);
+}
+
+#background-control a:nth-child(1) {
+  background: url("../images/wallpaper-01.jpg");
+  background-size: cover;
+}
+
+#background-control a:nth-child(2) {
+  background: url("../images/wallpaper-02.jpg");
+  background-size: cover;
+}
+
+#background-control a:nth-child(3) {
+  background: url("../images/wallpaper-03.jpg");
+  background-size: cover;
+}
+
+#background-control a:nth-child(4) {
+  background: url("../images/wallpaper-04.jpg");
+  background-size: cover;
+}
+
+#background-control a:nth-child(1) {
+  border-radius: 100% 0 0 0;
+}
+
+#background-control a:nth-child(2) {
+  border-radius: 0 100% 0 0;
+}
+
+#background-control a:nth-child(3) {
+  border-radius: 0 0 0 100%;
+}
+
+#background-control a:nth-child(4) {
+  border-radius: 0 0 100% 0;
+}
+
+#background-control:hover {
+  -webkit-transform: rotate(0deg) scale(1) translate(-50%, -50%);
+  transform: rotate(0deg) scale(1) translate(-50%, -50%);
+}/**
+ * --------------------------------
+ * 공통 클래스
+ * --------------------------------
+ */.cf:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.lt-ie8 .cf {
+  zoom: 1;
+}
+
+/*# sourceMappingURL=maps/style.css.map */

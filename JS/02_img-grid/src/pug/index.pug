@@ -1,0 +1,27 @@
+
+- var page_title = 'Grid System BG'
+
+<!DOCTYPE html>
+html(lang="ko-KR" class='no-js')
+	head
+		meta(http-equiv="X-UA-Compatible", content="IE=Edge")
+		meta(charset="UTF-8")
+
+		block doc_title
+			title #{page_title}
+		//- meta(name="robots" ,content="all")
+		//- meta(name="keywords" ,content="디자인에이전시, 웹디자인, CI디자인")
+		//- meta(name="description" ,content="웹디자인을 비롯한 여러가지 디자인을 진행하는 회사")
+
+		link(rel="stylesheet", href="css/style.css")
+		//- script(src="js/Libs/modernizr.js")
+		//- script(src="js/Libs/detectizr.js")
+		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
+		script(src="js/Libs/dom-helpers.js")
+	body
+		a.grid-toggle(href="", role="button" )
+			i.fa.fa-cog(aria-lable="그리드 토글" )
+
+		.grid
+
+		script(src="js/index.js")

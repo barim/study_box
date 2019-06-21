@@ -1,0 +1,31 @@
+
+- var page_title = 'Photo Gallery'
+
+<!DOCTYPE html>
+html(lang="ko-KR")
+	head
+		meta(http-equiv="X-UA-Compatible", content="IE=Edge")
+		meta(charset="UTF-8")
+
+		block doc_title
+			title #{page_title}
+		//- meta(name="robots" ,content="all")
+		//- meta(name="keywords" ,content="디자인에이전시, 웹디자인, CI디자인")
+		//- meta(name="description" ,content="웹디자인을 비롯한 여러가지 디자인을 진행하는 회사")
+
+		link(rel="stylesheet", href="css/style.css")
+		script(src="js/dom-helpers.js")
+	body
+		#background-control.cf
+			a(href="#", role="button", aria-lable="Card A")
+			a(href="#", role="button", aria-lable="Card A")
+			a(href="#", role="button", aria-lable="Card A")
+			a(href="#", role="button", aria-lable="Card A")
+
+		#background-group.cf
+			.bg-area-1
+			.bg-area-2
+			.bg-area-3
+			.bg-area-4
+
+		script(src="js/index.js")

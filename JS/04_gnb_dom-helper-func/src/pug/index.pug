@@ -1,0 +1,61 @@
+
+- var page_title = 'UI Widget - Global Navigation Bar'
+
+<!DOCTYPE html>
+!= '<!--[if !IE]><!-->'
+html.no-js(lang="ko-KR")
+	!= '<!--<![endif]-->'
+	!= '<!--[if IE 8]> <html lang="ko-KR" class="no-js lt-ie10 lt-ie9 ie8"> <![endif]-->'
+	!= '<!--[if IE 9]> <html lang="ko-KR" class="no-js lt-ie9 ie9"> <![endif]-->'
+	head
+		meta(http-equiv="X-UA-Compatible", content="IE=Edge")
+		meta(charset="UTF-8")
+
+		block doc_title
+			title #{page_title}
+		//- meta(name="robots" ,content="all")
+		//- meta(name="keywords" ,content="디자인에이전시, 웹디자인, CI디자인")
+		//- meta(name="description" ,content="웹디자인을 비롯한 여러가지 디자인을 진행하는 회사")
+
+		link(rel="stylesheet", href="css/style.css")
+		//- script(src="js/Libs/modernizr.js")
+		//- script(src="js/Libs/detectizr.js")
+		//- font asome 사용
+		//- link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
+		style.
+			.no-js body{background: #f00;}
+			.lt-ie8 body{background: #f00;}
+			.ie7 body{background: #f00;}
+			.ie8 body{background: #f00;}
+			.ie9 body{background: #f00;}
+		script(src="js/Libs/modernizr.js")
+		script(src="js/Libs/detectizr.js")
+		script(src="js/Libs/dom-helpers.js")
+	body
+		// Global Navigation Bar
+		nav#gnb
+			ul.lv-1
+				li: a(href="#") OCN 소개
+				li: a(href="#") 편성표
+				li
+					a.expand-handle(href="#") 프로그램
+					ul.lv-2.expand-menu
+						li: a(href="#") 아름다운 나의신부
+						li: a(href="#") 처용2
+						li: a(href="#") No.1 WEEKEND
+				li
+					a.expand-handle(href="#") 동영상
+					ul.lv-2.expand-menu
+						li: a(href="#") 추천동영상
+						li: a(href="#") 동영상 전체보기
+				li
+					a.expand-handle(href="#") 이벤트
+					ul.lv-2.expand-menu
+						li: a(href="#") 진행중이벤트
+						li: a(href="#") 당첨자발표
+						li: a(href="#") 티켓양도
+
+		script(src="js/index.js")
+
+
+			
