@@ -1,0 +1,36 @@
+<!DOCTYPE html><!--[if !IE]><!-->
+<html lang="ko-KR" class="no-js"><!--<![endif]--><!--[if IE 8]> <html lang="ko-KR" class="no-js lt-ie10 lt-ie9 ie8"> <![endif]--><!--[if IE 9]> <html lang="ko-KR" class="no-js lt-ie9 ie9"> <![endif]-->
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta charset="UTF-8"/>
+    <title>한화 갤러리 디자인 스터디</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+  </head>
+  <body>
+    <div id="slide-control-buttonset" class="wrapper"><a id="auto-slide-btn" href="" role="button"><i aria-lable="슬라이드 자동 재생" class="fa fa-play"></i></a><a id="stop-slide-btn" href="" role="button"><i aria-lable="슬라이드 정지" class="fa fa-stop"></i></a></div>
+    <div id="hanwha-gallery"></div>
+    <script src="js/hanwha-gallery-model.js"></script>
+    <script src="js/hanwha-gallery-view.js"></script>
+    <script src="js/hanwha-gallery-controller.js"></script>
+    <script>
+      (function(global, $){
+      	'use strict';
+      	var autoSlideBtn = document.querySelector('#auto-slide-btn'),
+      		stopSlideBtn = document.querySelector('#stop-slide-btn');
+      	$.controller.autoSlide();
+      	autoSlideBtn.onclick = function(){
+      		$.controller.autoSlide(1400);
+      		return false;
+      	};
+      	stopSlideBtn.onclick = function(){
+      		$.controller.stopSlide();
+      		return false;
+      	};
+      })(window, window.hanwha);
+    </script>
+  </body>
+</html>
+
+
+
