@@ -1,0 +1,63 @@
+
+- var page_title = 'jQuery - Javascript jQuery'
+
+<!DOCTYPE html>
+//- != '<!--[if !IE]><!-->'
+html.no-js(lang="ko-KR")
+	//- != '<!--<![endif]-->'
+	//- != '<!--[if IE 8]> <html lang="ko-KR" class="no-js lt-ie10 lt-ie9 ie8"> <![endif]-->'
+	//- != '<!--[if IE 9]> <html lang="ko-KR" class="no-js lt-ie9 ie9"> <![endif]-->'
+	head
+		meta(http-equiv="X-UA-Compatible", content="IE=Edge")
+		meta(charset="UTF-8")
+
+		block doc_title
+			title #{page_title}
+		//- meta(name="robots" ,content="all")
+		//- meta(name="keywords" ,content="디자인에이전시, 웹디자인, CI디자인")
+		//- meta(name="description" ,content="웹디자인을 비롯한 여러가지 디자인을 진행하는 회사")
+
+		//- link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
+		link(rel="stylesheet", href="css/ui.css")
+		link(rel="stylesheet", href="css/font-awesome.min.css")
+		
+		//- script(src="js/Libs/modernizr.js")
+		//- script(src="js/Libs/detectizr.js")
+		//- script(src="js/Libs/jquery-1.11.3.js")
+		script(src="js/Libs/jquery-2.1.4.js")
+		//- script(src="js/02-noConflict.js")
+		script(src="js/Libs/settingGoogleFonts.js")
+		script.
+			(function($){
+				$.settingGoogleFonts([
+					'Dosis:200,500:latin'
+				]);
+			})(window.jQuery);
+
+	body
+		.ui-accordion
+			.ui-accordion-handle.bold-dosis(data-category="sns" )
+				a(href="#" role="button" )
+					i.fa.fa-facebook-square
+					|SNS
+			.ui-accordion-content
+				h4 SNS headline
+				p  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+			.ui-accordion-handle.bold-dosis(data-category="shopping" )
+				a(href="#" role="button" ) 
+					i.fa.fa-shopping-cart
+					|Shopping
+			.ui-accordion-content
+				h4 Shopping headline
+				p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, dolorum.
+			.ui-accordion-handle.bold-dosis(data-category="sports" )
+				a(href="#" role="button" ) 
+					i.fa.fa-soccer-ball-o
+					|Sports
+			.ui-accordion-content
+				h4 Sports headline
+				p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente laudantium, in eaque quos ducimus tempore.
+			
+		script(src="js/ui.js")
+
+

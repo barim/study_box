@@ -1,0 +1,89 @@
+
+- var page_title = 'jQuery - Javascript Library'
+
+<!DOCTYPE html>
+//- != '<!--[if !IE]><!-->'
+html.no-js(lang="ko-KR")
+	//- != '<!--<![endif]-->'
+	//- != '<!--[if IE 8]> <html lang="ko-KR" class="no-js lt-ie10 lt-ie9 ie8"> <![endif]-->'
+	//- != '<!--[if IE 9]> <html lang="ko-KR" class="no-js lt-ie9 ie9"> <![endif]-->'
+	head
+		meta(http-equiv="X-UA-Compatible", content="IE=Edge")
+		meta(charset="UTF-8")
+
+		block doc_title
+			title #{page_title}
+		//- meta(name="robots" ,content="all")
+		//- meta(name="keywords" ,content="디자인에이전시, 웹디자인, CI디자인")
+		//- meta(name="description" ,content="웹디자인을 비롯한 여러가지 디자인을 진행하는 회사")
+
+		//- link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
+		link(rel="stylesheet", href="css/style.css")
+
+		
+		script(src="js/Libs/modernizr.js")
+		script(src="js/Libs/detectizr.js")
+		script(src="js/Libs/jquery-1.11.3.js")
+		//- script(src="js/Libs/jquery-2.1.4.js")
+		script.
+			//- console.log(jQuery(document.querySelector('#page')) );
+			window.onload = function(){
+				//- var $page = jQuery(document.querySelector('#page'));
+				//- console.log($page);
+				console.log('window onload문은 DOM + 이미지 로드 후에 실행');
+			};
+
+			//- ready문
+			//- jQuery(function(){
+			//- 	console.log('jQuery Ready문은 DOM이 완성된 즉시 실행');
+			//- });
+
+			//- jQuery( init );
+
+			//- function init(){
+			//- 	var $page = jQuery(document.querySelector('#page'));
+			//- 	$page
+			//- 		.css('color','#4372bd')
+			//- 		.css('font-size', '100px');
+			//- }
+
+	//- body.manipulation-html-class
+	body.assign-jquery-effect
+		#page
+			header
+				h1 Hi every one
+				p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis illum fugiat magni possimus autem impedit accusamus incidunt itaque dignissimos eos, voluptas exercitationem illo molestias, doloribus dicta quod magnam iste rerum. Aut ad itaque porro. Asperiores minus laboriosam illo, doloremque quis suscipit dicta labore repudiandae magni sint id, obcaecati! Recusandae mollitia id a dolorum expedita maxime, exercitationem ipsum, quae velit earum. Animi, rem officiis reprehenderit dignissimos impedit minus dicta ea, tenetur ullam qui enim voluptate ducimus aliquid cupiditate est distinctio odio temporibus ad hic illum esse voluptates obcaecati cum optio excepturi. Minima cumque eveniet odit, dicta alias ad dolore consequatur cum.
+
+				ul
+					li: a(href="") item-15
+					li: a(href="") item-14
+					li: a(href="") item-13
+					li: a(href="") item-12
+		//- script(src="js/jQuery-manipulation-HTML-class.js")
+		script.
+			( function(global, $, undefined){
+				'use strict';
+				var $page = $('#page'),
+					$page_headline = $page.find('h1');
+				
+				//- console.log($page, $page_headline);
+				
+				// $page_headline.on('mouseenter', function() {
+				$page_headline.on('click', function() {
+					// console.log('마우스 올라온');
+					$page_headline.next().hide('slow');
+					// hide에 인자값 키워드 를 주면 그 시간만큼 애니메이션 효과.
+					// next() 다음요소를 찾는것. 그 요소가 반드시 단락<p> 이어야 한다. 라고 설정가능.
+					// 내부에 조건문 쓰는것.
+				});
+
+				// $page_headline.on('mouseleave', function() {
+				$page_headline.on('dblclick', function() {// dbclick 은 사용 안하는게 좋다?
+					// console.log('마우스 나감');
+					$page_headline.next().show('slow');
+					//show에 인자값을 주면 그 키워드 만큼 애니메이션 효과.
+					// slow는 0.6초 normal 0.4 fast 0.2   밀리세컨드가 들어간다. 600
+				});
+
+			} )(window, window.jQuery);
+
