@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  padding: 3em;
+}
+
+.UniqueID {
+  padding: 0.4em 0.94em;
+  background: #A6513B;
+  color: #FBBEB3;
+  border-radius: 4px;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.UniqueID-result {
+  width: 110px;
+  margin-top: 20px;
+  border: 3px solid #B64926;
+  color: #A6604D;
+  padding: 0.6em 1em;
+}
+
+/*# sourceMappingURL=maps/style.css.map */

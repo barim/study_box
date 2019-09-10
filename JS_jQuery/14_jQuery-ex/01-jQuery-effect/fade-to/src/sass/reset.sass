@@ -1,0 +1,48 @@
+@charset 'utf-8'
+
+html
+	font-size: 100%
+
+body
+	font: normal 12px "애플고딕", AppleGothic ,Arial, "돋움" ,dotum ,Verdana ,sans-serif
+	line-height: 1.3
+	color: #666666
+	background-color: #fff
+	margin: 0
+	padding: 0
+// <body>에 글씨크기 색, 줄간격등을 주어모든 태그에 상속시켜 적용 되도록 하였습니다.
+
+h1, h2, h3, h4, h5, h6
+	font-size: 1em
+// 모든 제목에 1em을 주어 가장 부모인 <body> 의 글씨크기 12px를 그대로 받아 적용하게 하였습니다.
+
+h1, h2, h3, h4, h5, h6, div, p, dl, dt, dd, ul, ol, li, form, fieldset, blockquote, address, table, thead, tbody, tfoot, tr, td, caption 
+	margin: 0
+	padding: 0
+// 기본적인 인지를 위해 박스의 간격과 여백이 들어가 있는 태그들에 “0” 값을 선언함으로 모두 초기화 하였습니다.
+
+ul, ol 
+	list-style: none
+// 리스트에 중점과 숫자표시를 없앴습니다.
+
+img
+	border: 0
+// ie에서 이미지에 기본으로 생기는 보더 초기화
+
+a
+	text-decoration: none
+	color: #666666
+// 링크에 기본으로 생기는 밑줄을 없앱니다.
+
+// a:link, a:visited 
+// 	color: #666666
+// 	text-decoration: none
+
+// a:hover 
+// 	color: #666666
+// 	text-decoration: underline
+
+table
+	border-collapse: collapse
+	border-spacing: 0
+// 테이블의 선을 합친 스타일로 초기화합니다

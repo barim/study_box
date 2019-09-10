@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta charset="UTF-8"/>
+    <title>jQuery plugin</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- <script src="js/jquery.radioClass.js"></script> -->
+  </head>
+  <body class="this-is-body">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <!-- <script src="js/index.js"></script> -->
+    <script>
+      // background 색 입히는 플러그인.
+      ( function(global, $){
+      	'use strict';
+      	
+      	$.fn.customBG = function(color) {
+      		if($.type(color) === 'string') {
+      			this.css('background', color || '#eee');
+      		}
+      		// 배열을 받았을 때
+      		else {
+      			var that = this;
+      
+      			$.each(that, function(index, el) {
+      				that.eq(index).css('background', color[index]);
+      			});
+      		}
+      	};
+      } )(window, window.jQuery);
+      
+      var colorList = ['#FE9A44', '#74FBE7', '#FF4141'];
+      
+      $('.box').customBG(colorList);
+    </script>
+  </body>
+</html>

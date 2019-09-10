@@ -1,0 +1,38 @@
+.container {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  width: 720px;
+  height: 250px;
+  margin: auto;
+  padding: 5px;
+  background: #5a1400;
+}
+
+.fadeBox {
+  opacity: 0.2;
+  position: relative;
+  float: left;
+  width: 236px;
+  height: 246px;
+  margin: 2px;
+  background: red;
+}
+
+.fadeBox > h3 {
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  height: 40px;
+  margin: auto;
+  font-family: sans-serif;
+  font-size: 35px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=maps/style.css.map */

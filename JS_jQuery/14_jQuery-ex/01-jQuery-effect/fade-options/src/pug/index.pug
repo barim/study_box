@@ -1,0 +1,30 @@
+
+- var page_title = 'jQuery - SlideShow'
+
+<!DOCTYPE html>
+html.no-js(lang="ko-KR")
+
+	head
+		meta(http-equiv="X-UA-Compatible", content="IE=Edge")
+		meta(charset="UTF-8")
+
+		block doc_title
+			title #{page_title}
+		//- meta(name="robots" ,content="all")
+		//- meta(name="keywords" ,content="디자인에이전시, 웹디자인, CI디자인")
+		//- meta(name="description" ,content="웹디자인을 비롯한 여러가지 디자인을 진행하는 회사")
+
+		link(rel="stylesheet", href="css/style.css")
+		script(src="js/Libs/jquery-2.1.4.js")
+		script(src="js/Libs/jquery.utils.js")
+
+	body
+		.container
+			.bigBox
+			progress#progressBar(value="0", max="100")
+			a.clickToFadeIn(role="button", href="#") Fade In
+			a.clickToFadeOut(role="button", href="#") Fade Out
+
+		script(src="js/main.js")
+
+
